@@ -1,10 +1,17 @@
-## Introduction
-This is a short free and open book aimed towards helping software developers
+# Software Quality For Developers
+By Garrett Berg
+
+# Introduction
+This is a short, free and open book aimed towards helping software developers
 improve their software quality. It is targeted towards an audience that:
-- knows a programming language (python is what is used in the examples)
+- knows at least one programming language
 - knows revision control. If you don't know one, learn one first. I recommend git.
 - wants a brief guide on how to have fewer bugs, re-designs and headaches when
     trying to get their code do what they want it to do.
+
+This book can be read in full at [gitbooks](1). It is in a pre-release status,
+so is NOT content-complete or edited as much as the author would like. Comments
+and suggestions are always welcome.
 
 First, a little bit about myself. I am a Software Engineer in Test
 (SET) at a storage company and it is my job to think about and implement ways
@@ -31,10 +38,10 @@ have to learn in order to use revision control effectively? For me it was:
 This is the central premises of this book: you don't need to understand
 technical jargon or complex test methodologies to realize huge gains in the quality
 of your software. Some simple vocabulary, new tools and new ways of looking at things
-are all you need to get the same benefits as when you learned revision control.
+are all you need to get the same benefits as learning revision control.
 
 > Disclaimer: This book was written to be a supplement to the tutorial for
-> [rst](1), a tool developed by the author of this book. All examples in this book
+> [rst](2), a tool developed by the author of this book. All examples in this book
 > are written using rst's open format and rst is used throughout the book
 > as the requirements tracking tool of choice. However, if the reader wishes to use a
 > different method of requirements tracking, it should be relatively simple
@@ -44,5 +51,6 @@ are all you need to get the same benefits as when you learned revision control.
 > Creative Commons Share Alike License. To see more about CC Licenses,
 > go here: TODO
 
-[1]: http://github.com/vitiral/rst
+[1]: https://vitiral.gitbooks.io/software-quality-for-developers/content/
+[2]: http://github.com/vitiral/rst
 

@@ -5,6 +5,9 @@ This is the development outline for this book.
 - Intro
     - introduce author
     - revision control as example of gains
+- why are we here
+    - an overview of what is good
+    - what we still need
 - A working example
     - introduce the "product" that we will be making
     - introduce the idea of a "purpose" document
