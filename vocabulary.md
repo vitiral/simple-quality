@@ -6,11 +6,10 @@ that!), I will try and give a rough history of words and why they come in handy.
 
 ## Specifying meaning
 It is very important that your design documents have clear meaning. Without
-clear meaning, it is easy to not know what the [definition of done](1) of a
-specific requirement or specification is.
+clear meaning, it is difficult to know your [definition of done](1).
 
-This is where the three "words with teeth" come in, and will be used throughout
-this book. These definitions are edited versions of the excellent article at
+We need words with teeth, and these words are what give them to us. These words will
+be used throughout this book. These definitions are edited versions of the excellent article at
 [reqexperts.com](2):
 - **Shall – Requirement:**  Shall is used to indicate a requirement that is contractually
 	binding, meaning it must be implemented and its implementation verified.

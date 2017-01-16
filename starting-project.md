@@ -2,16 +2,16 @@
 
 The primary teaching method that this book will employ is the "learning by doing"
 approach. This is an approach that many developers are familiar with, as it is
-how some of the most effective tutorials approach the subject. An "overview" of
-the subject will also eventually be published, to help more advanced users.
+how some of the most effective tutorials approach their subject. An "overview"
+will also eventually be published, to help more advanced users.
 
 The example project used will be the same as the one used in the [rst](1) tutorial,
-which makes sense because I am also the author of that tool and it was designed
+which makes sense because I am the author of that tool and it was designed
 specifically to address the approach to quality defined in this book. We will
 install rst in a later chapter, but just know that while there is definitely
 overlap between the two tutorials, they have very different purposes. rst's
 tutorial is designed to teach the tool, while this is an in-depth tutorial
-to quality best practices as a whole.
+to unifying quality best practices.
 
 The project we will be implementing is the [flash card challenge](2) created
 by open hatch. There are several reasons this project was chosen:
@@ -29,7 +29,7 @@ say about itself:
 > emphasizes breaking your code on purpose, and in the process teaches a
 > plethora of important topics.
 
-There are two important aspects to the "Learn The Hard Way" method that
+There are four important aspects to the "Learn The Hard Way" method that
 this tutorial will use:
 1. It is designed for absolute beginners: you should know the basics of a
     programming language and revision control, and that's all you need.
@@ -39,7 +39,7 @@ this tutorial will use:
     issues and ask you to fix them.
 4. It uses exercises as the primary method that you learn. Only by actually
     doing them will you understand how the tools and processes you are reading
-    about are useful. So when you see exercises, like the one below, it is important
+    are useful. So when you see exercises, like the one below, it is important
     that you do them.
 
 > ### Exercise 1:

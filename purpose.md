@@ -38,14 +38,14 @@ not get it's meaning across and will hamper your project
 instead of help it. Edit and re-edit your high level docs, you will
 thank yourself for it in the future.
 
-> ### Exercise 2:
+> ### Exercise 1:
 > break down the purpose documentation above into some high level
 > requirements. Then give a high level specification for how you
 > would approach those requirements. What programming language would you use?
 > What libraries would you use? What would be your overall approach to
 > each problem?
 
-> ### Exercise 3:
+> ### Exercise 2:
 > Assume your program ui would be over the command line. What kind of arguments
 > and user configuration would you accept? Would you let the user use only
 > one quiz file at a time, or use multiple of them? Write down your answers.
