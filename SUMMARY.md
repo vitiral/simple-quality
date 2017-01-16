@@ -5,3 +5,5 @@
 * [Starting The Project](starting-project.md)
 * [Purpose Documentation](purpose.md)
 * [High Level Design](high-level.md)
+* [Vocabulary](vocabulary.md)
+* [New Tools](tools.md)

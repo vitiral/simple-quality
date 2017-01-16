@@ -19,6 +19,15 @@ practices while doing so.
 The example tutorial can be found here:
     http://wiki.openhatch.org/Flash_card_challenge
 
+It should be easy for users to input questions to the quizzer in a
+simple and open format. Additionally, the program should use
+methodologies that uses effective memorization techniques. Some
+possible ideas include:
+- doing items in a random order
+- doing missed items more often
+- telling the answer after a guess is missed
+- allowing users to configure time limits, so they can compare
+    results between quizzes.
 ```
 
 Notice that we try to keep our purpose documentation as brief and simple

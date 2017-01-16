@@ -11,18 +11,17 @@ specific requirement or specification is.
 
 This is where the three "words with teeth" come in, and will be used throughout
 this book. These definitions are edited versions of the excellent article at
-[reqexperts.com](5):
+[reqexperts.com](2):
 - **Shall – Requirement:**  Shall is used to indicate a requirement that is contractually
-	  binding, meaning it must be implemented, and its implementation verified.
-	  Period!  Don’t think of “shall” as a word, but rather as an icon that SCREAMS:
-	  “This is a requirement.”  If a statement does not contain the word “shall” it
-	  is not a requirement.
+	binding, meaning it must be implemented and its implementation verified.
+	Period!  Don’t think of “shall” as a word, but rather as an icon that SCREAMS:
+	“This is a requirement.”  If a statement does not contain the word “shall” it
+	is not a requirement.
 - **Will - Facts or Declaration of Purpose:** Will is used to indicate a
-	  statement of fact.  Will statements are not subject to verification.  For
-	  example:  if I want to tell you something about another system I will use
-	  will.  "The application will be written in python" is an example.
+	statement of fact.  Will statements are not subject to verification.
+	"The application **will** be written in python" is an example.
     **Will** statements are meant to be notes to inform lower layers
-    of design or note implementation details
+    of design or note implementation details about a component.
 - **Should – Goals, non-mandatory provisions:** Should is used to indicate a
 	goal which must be addressed by the design team but is not formally
 	verified. Why include should (goal) statements? Because you may have a very
@@ -39,10 +38,10 @@ this book. These definitions are edited versions of the excellent article at
 
 ## Testing your software
 There are three kinds of testing this book will cover:
-- [unit testing](2), which is testing isolated pieces of code
-- [integration testing](3), which is testing modules of your code integrated
+- [unit testing](3), which is testing isolated pieces of code
+- [integration testing](4), which is testing modules of your code integrated
 	together, but not the entire system
-- [system testing](3), also known as end-to-end testing.
+- [system testing](5), also known as end-to-end testing.
 
 There are other testing phases and other schools of thought, but these three
 will get you a long way no matter what your job.
@@ -53,9 +52,7 @@ will get you a long way no matter what your job.
 > tutorial.
 
 [1]: https://www.agilealliance.org/glossary/definition-of-done/
-
-[5]: http://reqexperts.com/blog/2012/10/using-the-correct-terms-shall-will-should/
-
+[2]: http://reqexperts.com/blog/2012/10/using-the-correct-terms-shall-will-should/
 [2]: https://en.wikipedia.org/wiki/Unit_testing
 [3]: https://en.wikipedia.org/wiki/Integration_testing
 [4]: https://en.wikipedia.org/wiki/System_testing

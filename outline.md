@@ -20,7 +20,8 @@ This is the development outline for this book.
     - customer
     - shall, should, will
     - risk levels
-- Shiny new tools
+
+- New Tools
     - Using revision control
     - Developing unit tests
     - discuss "README requirements"
