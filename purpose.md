@@ -8,7 +8,7 @@ things in the past. As your project adapts and changes (and it will), so
 should your purpose documentation.
 
 Open up a text file called "README.md" in you favorite text editor.
-This uses the [markdown format](4), a simple format that is worth learning,
+This uses the [markdown format](1), a simple format that is worth learning,
 but easy to read/copy without knowing. Here is my purpose section:
 
 ```
@@ -41,3 +41,4 @@ thank yourself for it in the future.
 > and user configuration would you accept? Would you let the user use only
 > one quiz file at a time, or use multiple of them? Write down your answers.
 
+[1]: https://gitbookio.gitbooks.io/markdown/content/

@@ -20,7 +20,3 @@ best practices as well as give you a few more tools. The tools presented in this
 book will not only allow you to write better software, but they will help your
 day-to-day in the same ways that good unit tests do.
 
-The primary teaching method that this book will employ is the "learning by doing"
-approach. This is an approach that many developers are familiar with, as it is
-how some of the most effective tutorials approach the subject. An "overview" of
-the subject will also eventually be published, to help more advanced users.

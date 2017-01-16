@@ -30,11 +30,11 @@ say about itself:
 > plethora of important topics.
 
 There are two important aspects to the "Learn The Hard Way" method that
-this tutorial will follow:
+this tutorial will use:
 1. It is designed for absolute beginners: you should know the basics of a
     programming language and revision control, and that's all you need.
 2. It focuses on teaching concepts and tools which are simple and deliver
-    real-world and immediate value.
+    immediate real-world value.
 3. It will break down problems into component pieces and then introduce
     issues and ask you to fix them.
 4. It uses exercises as the primary method that you learn. Only by actually
