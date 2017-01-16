@@ -25,10 +25,16 @@ This is the development outline for this book.
     - Developing unit tests
     - discuss "README requirements"
     - rst
+- rst: follow the tutorial for the load component
+    - recap rst and pick up where it left off
 - Detailed design
+    - craft detailed design for the command line
+    - craft design for the "question asker" object
 - Completing the MVP
-- Unit testing
-- Designing tests
+    - integrate the loader and question asker into the cmdline
+- Functionality unit testing
+    - write unit tests
+- Designing integration tests
     - discuss end to end testing
 - Risk analysis
     - identifying risk areas

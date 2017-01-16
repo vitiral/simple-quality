@@ -4,10 +4,11 @@ about quality best practices. There have been several advancements made in
 how developers develop quality software, but they have been largely piecemeal
 and have lacked an overview of how to fit them all together. Several of the
 recent advancements include:
+- new emphasis on test-driven design and developers writing their own unit
+    tests
+- agile processes and best practices
 - better revision control tools and best practices
 - well crafted linters and IDE's to help projects have easy to read code
-- new emphasis on test driven design, especially the philosophy of test
-    driven design.
 - more emphasis on good documentation as well as programming languages supporting
     documentation inline with code.
 
