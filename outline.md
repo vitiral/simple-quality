@@ -11,26 +11,25 @@ This is the development outline for this book.
 - A working example
     - introduce the "product" that we will be making
     - introduce the idea of a "purpose" document
-    - write the purpose document
-    - introduce high level requirements and specs
+- purpose document
+- high level design
+    - write some high level requirements
+    - write some high level specs
+    - discuss the project
 - Vocabulary
     - customer
     - shall, should, will
     - risk levels
-- High level design
-    - write some high level requirements
-    - write some high level specs
-    - discuss the project
 - Shiny new tools
     - Using revision control
+    - Developing unit tests
     - discuss "README requirements"
     - rst
-    - discuss unit testing
-    - discuss concept of end to end testing
 - Detailed design
-- Designing tests
-- Implementing the MVP
+- Completing the MVP
 - Unit testing
+- Designing tests
+    - discuss end to end testing
 - Risk analysis
     - identifying risk areas
     - identifying customer impact
