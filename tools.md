@@ -1,7 +1,7 @@
-# New Tools
+# Shiny New Tools
 Just like revision control best practices would be meaningless without
 a revision control tool like git, design best practices are
-meaningless without associated tools.
+meaningless without the associated tools.
 
 Okay, that isn't *quite* accurate, but it's inaccuracy is the root of why
 design tools have languished so much in the history of software
@@ -12,7 +12,7 @@ and nowhere. You end up either repeating intention or forgetting to
 specify it all together.
 
 Let's get this out of the way first: except for some of the
-simplest possible libraries user/developer documents
+simplest possible libraries, user/developer documents
 should **not** be your only design documents! The things your users are concerned
 about should almost never be the implementation details of your project,
 and unless your library is so simple that all design decisions fit in
@@ -20,18 +20,18 @@ a few sentences, your code documentation won't cut it for preserving
 intent or pointing out relationships between components.
 
 This is not to say that user (guide/README) and developer (code) documentation
-are not critical to a project's quality: they absolutly are. But they
+are not critical to a project's quality: they absolutely are. But they
 should not replace your requirements, design specification or
 testing overview documentation for any but the simplest projects.
 
 So, here are the primary tools that every developer should have
 under their belt to increase the quality of their software and
-their own productivity.
+their productivity.
 
 ## revision control
 This is probably the most essential tool to learn how to use,
-as it allows you to code fearlessly both individually and
-as a team. We will be using [git](1) to track our progress at each stage.
+as it allows you to code fearlessly without worrying that past code will
+be "lost." We will be using [git](1) to track our progress at each stage.
 
 ## developer ready inline documentation
 [Most languages](2) at least have a library that can take inline
