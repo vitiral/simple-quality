@@ -5,14 +5,15 @@ By Garrett Berg
 This is a short, free and open book aimed towards helping software developers
 improve their software quality. It is targeted towards an audience that:
 - knows at least one programming language
-    knows revision control. If you don't know one, learn git
+- knows revision control. If you don't know one, learn git
 - wants a brief guide on how to have fewer bugs, re-designs and headaches
 
 This book can be read in full at [gitbooks](1). It is in a pre-release status,
 so is NOT content-complete or edited as much as the author would like. Comments
 and suggestions are always welcome.
 
-Think back to the time you first learned revision control.
+This book can be very beneifical for you. To give you an idea of what the purpose
+is, I want you to think back to the time you first learned revision control.
 Think about how you were backing up files before that point. Maybe you were
 copying folders with the date changed? Maybe you were not backing up at all?
 Remember how catastrophic one small change could be to your entire project?
