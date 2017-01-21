@@ -31,22 +31,22 @@ their productivity.
 ## revision control
 This is probably the most essential tool to learn how to use,
 as it allows you to code fearlessly without worrying that past code will
-be "lost." We will be using [git](1) to track our progress at each stage.
+be "lost." We will be using [git][1] to track our progress at each stage.
 
 ## developer ready inline documentation
-[Most languages](2) at least have a library that can take inline
+[Most languages][2] at least have a library that can take inline
 documentation on your functions, classes, etc and translate
 them into rendered and beautiful user docs. Some languages
-support it natively. [rust](3) is a great example, where the
+support it natively. [rust][3] is a great example, where the
 language-defined syntax will create beautiful developer docs.
 We will be writing python documentation that *could* be converted using
-[Spinx](4) and can be natively viewed when importing our package
+[Spinx][4] and can be natively viewed when importing our package
 from python REPL by calling `help(obj)`.
 
 ## unit testing
 Almost every language has a unit testing framework. Get
-to know yours intimately. We will be using python's [unittest](5)
-package to write tests in this tutorial and [pytest](6) to run
+to know yours intimately. We will be using python's [unittest][5]
+package to write tests in this tutorial and [pytest][6] to run
 them.
 
 ## custom tooling, build systems and scripting languages
@@ -63,7 +63,7 @@ you can automate pain points and increase quality. Develop tools that
 make it easy to interface with your product, or hook into annoying legacy test
 software, or develop tests in a simpler way, etc.
 
-## [rst](7): the requirements tracking tool made for developers
+## [rst][7] the requirements tracking tool made for developers
 rst will be our bread and butter for writing
 and linking components in our design, and then linking it with our code to track
 how much of our project is implemented and tested. This tool was
@@ -77,6 +77,3 @@ presented in this book.
 [5]: https://docs.python.org/3.6/library/unittest.html
 [6]: http://doc.pytest.org/en/latest/
 [7]: https://github.com/vitiral/rst
-
-[30]: http://dpc.pw/cbuf-rs/cbuf/index.html
-[31]: https://github.com/rust-lang-nursery/lazy-static.rs

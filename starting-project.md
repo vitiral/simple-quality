@@ -5,7 +5,7 @@ approach. This is an approach that many developers are familiar with, as it is
 how some of the most effective tutorials approach their subject. An "overview"
 will also eventually be published, to help more advanced users.
 
-The example project used will be the same as the one used in the [rst](1) tutorial,
+The example project used will be the same as the one used in the [rst][1] tutorial,
 which makes sense because I am the author of that tool and it was designed
 specifically to address the approach to quality defined in this book. We will
 install rst in a later chapter, but just know that while there is definitely
@@ -13,7 +13,7 @@ overlap between the two tutorials, they have very different purposes. rst's
 tutorial is designed to teach the tool, while this is an in-depth tutorial
 to unifying quality best practices.
 
-The project we will be implementing is the [flash card challenge](2) created
+The project we will be implementing is the [flash card challenge][2] created
 by open hatch. There are several reasons this project was chosen:
 - It has a clear goal with targeted users
 - It is simple and yet can be extremely broad
@@ -21,7 +21,7 @@ by open hatch. There are several reasons this project was chosen:
     like psuedo code. You should be able to follow along in any language
     that you wish to.
 
-One of the best tutorials on C, [learn C the hard way](3), has this to
+One of the best tutorials on C, [learn C the hard way][3] has this to
 say about itself:
 
 > LCTHW teaches real robust C coding and defensive programming tactics on real
@@ -44,7 +44,7 @@ this tutorial will use:
 
 > ### Exercise 1:
 > Create a `README.md` file and take notes while you read the
-> [flash card challenge](2) webpage. Pay close attention to:
+> [flash card challenge][2] webpage. Pay close attention to:
 > - what is the use case (how will this software be used)?
 > - what are the inputs/outputs as presented?
 >

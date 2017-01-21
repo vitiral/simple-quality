@@ -51,7 +51,7 @@ thank yourself for it in the future.
 > one quiz file at a time, or use multiple of them? Write down your answers.
 
 > ### Exercise 3:
-> Skim through the [markdown format](1) specification. Markdown is a great
+> Skim through the [markdown format][1] specification. Markdown is a great
 > format for keeping docs, since it allows you to write docs in plain text
 > (so they can be revision controlled) but the simple formatting rules
 > render beautifully on sites like github.

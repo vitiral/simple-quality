@@ -5,7 +5,7 @@ our progress. Since rst tracks design docs which are written
 in plain text, you can (and should) use revision control to
 track the evolution of your design documents.
 
-[Install git](1) and type:
+[Install git][1] and type:
 ```
 git init
 git add README.md
@@ -19,7 +19,7 @@ us to track our progress.
 > git is a fantastic tool, but it is beyond the scope of this guide
 > to give a full tutorial on git or revision control in general.
 > Before proceeding with this guide any further, it is recommended
-> you go through the [git documentation](2)
+> you go through the [git documentation][2]
 >
 > you can always type `git COMMAND -h` to get help on any command
 >
@@ -28,10 +28,10 @@ us to track our progress.
 
 ## rst tutorial
 
-Head over to rst's [User Guide](3) and install rst. Read through
+Head over to rst's [User Guide][3] and install rst. Read through
 the "hello world" introduction to get a basic overview of what
 the tool allows you to do, and then head over to the
-[In Depth Guide](4).
+[In Depth Guide][4].
 
 The rst tutorial and this book have been developed together to
 work off of eachother. Therefore, we are going to use the
@@ -72,7 +72,7 @@ before continuing.
 > design file. Read through it and follow the instructions.
 >
 > The next stage, `rst tutorial 2`, will launch a `tutorial.md` file
-> which can also be [viewed on the web](5). Read through it and
+> which can also be [viewed on the web][5]. Read through it and
 > follow the instructions
 
 [1]: https://git-scm.com/

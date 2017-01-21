@@ -6,11 +6,11 @@ that!), I will try and give a rough history of words and why they come in handy.
 
 ## Specifying meaning
 It is very important that your design documents have clear meaning. Without
-clear meaning, it is difficult to know your [definition of done](1).
+clear meaning, it is difficult to know your [definition of done][1].
 
 We need words with teeth, and these words are what give them to us. These words will
 be used throughout this book. These definitions are edited versions of the excellent article at
-[reqexperts.com](2):
+[reqexperts.com][2]
 - **Shall – Requirement:**  Shall is used to indicate a requirement that is contractually
 	binding, meaning it must be implemented and its implementation verified.
 	Period!  Don’t think of “shall” as a word, but rather as an icon that SCREAMS:
@@ -37,10 +37,10 @@ be used throughout this book. These definitions are edited versions of the excel
 
 ## Testing your software
 There are three kinds of testing this book will cover:
-- [unit testing](3), which is testing isolated pieces of code
-- [integration testing](4), which is testing modules of your code integrated
+- [unit testing][3] which is testing isolated pieces of code
+- [integration testing][4] which is testing modules of your code integrated
 	together, but not the entire system
-- [system testing](5), also known as end-to-end testing.
+- [system testing][5] also known as end-to-end testing.
 
 There are other testing phases and other schools of thought, but these three
 will get you a long way no matter what your job.

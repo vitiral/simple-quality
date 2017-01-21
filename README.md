@@ -1,4 +1,4 @@
-# [Software Quality For Developers](1)
+# [Software Quality For Developers][1]
 By Garrett Berg
 
 # Introduction
@@ -31,14 +31,14 @@ of your software. Some simple vocabulary, new tools and new ways of looking at t
 are all you need to get the same benefits as learning revision control.
 
 > Disclaimer: This book was written to be a supplement to the tutorial for
-> [rst](2), an open source tool developed by the author of this book. All examples in this book
+> [rst][2], an open source tool developed by the author of this book. All examples in this book
 > are written using rst's open format and rst is used throughout the book
 > as the requirements tracking tool of choice. **rst** is easy to learn and
 > will always remain free to use, so no matter what tracking tool you end up
 > using the concepts taught in this book should translate well.
 
 All examples in this book are public domain. Te rest of the book is released
-under the [GNU GPLv3 License](3).
+under the [GNU GPLv3 License][3].
 
 [1]: https://vitiral.gitbooks.io/software-quality-for-developers/content/
 [2]: http://github.com/vitiral/rst
