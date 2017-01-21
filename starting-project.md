@@ -43,8 +43,8 @@ this tutorial will use:
     that you do them.
 
 > ### Exercise 1:
-> Read the [flash card challenge](2) webpage, taking notes while you
-> do so. Pay particular attention to:
+> Create a `README.md` file and take notes while you read the
+> [flash card challenge](2) webpage. Pay close attention to:
 > - what is the use case (how will this software be used)?
 > - what are the inputs/outputs as presented?
 >
