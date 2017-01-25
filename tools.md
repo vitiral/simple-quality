@@ -1,7 +1,8 @@
 # Shiny New Tools
 Just like revision control best practices would be meaningless without
 a revision control tool like git, design best practices are
-meaningless without the associated tools.
+meaningless without a tool to help you track your requiements to
+your implementation.
 
 Okay, that isn't *quite* accurate, but it's inaccuracy is the root of why
 design tools have languished so much in the history of software
@@ -12,7 +13,7 @@ and nowhere. You end up either repeating intention or forgetting to
 specify it all together.
 
 Let's get this out of the way first: except for some of the
-simplest possible libraries, user/developer documents
+simplest libraries, user/developer documents
 should **not** be your only design documents! The things your users are concerned
 about should almost never be the implementation details of your project,
 and unless your library is so simple that all design decisions fit in
@@ -23,6 +24,11 @@ This is not to say that user (guide/README) and developer (code) documentation
 are not critical to a project's quality: they absolutely are. But they
 should not replace your requirements, design specification or
 testing overview documentation for any but the simplest projects.
+
+Keep in mind that it is always best practice to try and split your
+project into as many small libraries as possible. Simplicity should always be
+the number one goal. However, not all applications and libraries can be
+made so simple.
 
 So, here are the primary tools that every developer should have
 under their belt to increase the quality of their software and
@@ -49,6 +55,12 @@ to know yours intimately. We will be using python's [unittest][5]
 package to write tests in this tutorial and [pytest][6] to run
 them.
 
+## linters and code formatters
+When all code is automatically formatted and linted, it is easier
+to read and edit. Also, arguing over whether to use tabs or spaces
+is probably the least productive thing possible. Use a formatter
+for your language.
+
 ## custom tooling, build systems and scripting languages
 Some people believe that the primary responsibility of Software Engineers
 in Test (my job title) is to design test cases. I think this is
@@ -68,7 +80,7 @@ rst will be our bread and butter for writing
 and linking components in our design, and then linking it with our code to track
 how much of our project is implemented and tested. This tool was
 designed specifically to facilitate the philosophy of software quality
-presented in this book.
+presented in this book. rst will be the topic of the next chapter.
 
 [1]: https://git-scm.com/
 [2]: http://rosettacode.org/wiki/Documentation

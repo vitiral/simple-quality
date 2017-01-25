@@ -8,9 +8,8 @@ that!), I will try and give a rough history of words and why they come in handy.
 It is very important that your design documents have clear meaning. Without
 clear meaning, it is difficult to know your [definition of done][1].
 
-We need words with teeth, and these words are what give them to us. These words will
-be used throughout this book. These definitions are edited versions of the excellent article at
-[reqexperts.com][2]
+We want to stay as simple as possible, so I prefer to use only three words to
+have meaning in requirements docs:
 - **Shall – Requirement:**  Shall is used to indicate a requirement that is contractually
 	binding, meaning it must be implemented and its implementation verified.
 	Period!  Don’t think of “shall” as a word, but rather as an icon that SCREAMS:
@@ -30,6 +29,8 @@ be used throughout this book. These definitions are edited versions of the excel
 	**should** use methodologies that uses effective memorization techniques".
 	There is no way to validate that we are using the best methodlogies, but
 	we should aim for that goal.
+
+> definitions modified from article at [reqexperts.com][2]
 
 > ### Exercise 1:
 > Review the documentation we've written so far. When did we use "shall",

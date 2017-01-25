@@ -18,8 +18,7 @@ section:
 ### Execution Method
 
 The minimum viable product shall be a command line utility that is given the
-path to one or more question files, as detailed in "User Configuration", as
-arguments.
+path to one or more question files as arguments
 
 Additional arguments will include:
 - `-t`: specify the time allowed for each question
@@ -40,6 +39,9 @@ csv format consisting of two columns: the question and the answer.
 ```
 
 Again, just like the purpose documentation, this documentation aims to be
-brief and help you during your design process. By writing documentation
+brief and help you during your design process.
 
+> ### Exercise 1:
+> What are some other items that we can detail at a high level?
+> Try writing them out yourself in this section.
 

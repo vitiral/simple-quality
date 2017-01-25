@@ -1,9 +1,8 @@
 # A Working Example
 
-The primary teaching method that this book will employ is the "learning by doing"
-approach. This is an approach that many developers are familiar with, as it is
-how some of the most effective tutorials approach their subject. An "overview"
-will also eventually be published, to help more advanced users.
+The primary teaching method that this book will employ is "learning by doing".
+This is an approach that many developers are familiar with and is used in some
+of the most effective tutorials on software development.
 
 The example project used will be the same as the one used in the [rst][1] tutorial,
 which makes sense because I am the author of that tool and it was designed
@@ -16,15 +15,15 @@ to unifying quality best practices.
 The project we will be implementing is the [flash card challenge][2] created
 by open hatch. There are several reasons this project was chosen:
 - It has a clear goal with targeted users
-- It is simple and yet can be extremely broad
+- It is simple to define and yet can be extremely broad
 - The guide is written in python, a language who's syntax reads largely
     like psuedo code. You should be able to follow along in any language
-    that you wish to.
+    that you are familiar with or are learning.
 
 One of the best tutorials on C, [learn C the hard way][3] has this to
 say about itself:
 
-> LCTHW teaches real robust C coding and defensive programming tactics on real
+> [This tutorial] teaches real robust C coding and defensive programming tactics on real
 > hardware rather than abstract machines and pedantic theory. The book
 > emphasizes breaking your code on purpose, and in the process teaches a
 > plethora of important topics.

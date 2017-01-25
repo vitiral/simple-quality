@@ -1,11 +1,10 @@
 # Purpose Documentation
+
 One of the most critical pieces of documentation that you can write is
 your purpose documentation. Without purpose documentation, it is easy
-to get lost in the web of your project and forget what you were trying
-to accomplish in the first place. Also, purpose documentation that is
-revision controlled will give you a handy reference for why you did certain
-things in the past. As your project adapts and changes (and it will), so
-should your purpose documentation.
+to get lost and forget what your project was trying to accomplish in the first
+place. Purpose documentation that is revision controlled will give you a handy
+reference for why certain things were done.
 
 Open up your README.md in your favorite plain-text editor and write
 out the following by hand (don't copy paste):
@@ -19,7 +18,7 @@ The example tutorial can be found here:
     http://wiki.openhatch.org/Flash_card_challenge
 
 It should be easy for users to input questions to the quizzer in a
-simple and open format. Additionally, the program should use
+simple and open format. Additionally, the quizzer should use
 methodologies that uses effective memorization techniques. Some
 possible ideas include:
 - doing items in a random order
@@ -31,10 +30,10 @@ possible ideas include:
 
 Notice that we try to keep our purpose documentation as brief and simple
 as possible. This is important for all documents, but is especially important
-for high level. There is a basic rule: documentation that is not brief
+for high level docs. There is a basic rule: documentation that is not brief
 and clear will not be read -- it will be skimmed. Skimmed documentation will
-not get it's meaning across and will hamper your project
-instead of help it. Make sure to always go back to your docs and try to make
+not get it's meaning across and will hamper your project instead of help it.
+Make sure to always go back to your docs and try to make
 them simpler and reflect the purpose of the project more plainly. You will
 thank yourself for it in the future.
 
@@ -57,6 +56,6 @@ thank yourself for it in the future.
 > render beautifully on sites like github.
 >
 > Markdown is easy to learn, easy to read and has become the defacto standard
-> for writing docs among open source projects.
+> for writing docs for open source projects.
 
 [1]: https://gitbookio.gitbooks.io/markdown/content/
