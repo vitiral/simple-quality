@@ -1,6 +1,4 @@
-
 # Clean Code
-
 Before we design and implement the quiz component, let's take stock
 of where we currently are. We have:
 - functions that can load from either a path or a stream (file-object)
@@ -52,7 +50,9 @@ language's style guide:
 - if there is more than one developer on your code-base, it
 	is much easier to read code if it all follows the style
 	guide
-- documentation is good, and it is typically required by style guides
+- standardization is good -- it makes your team's code more readable
+    and writable by everybody involved
+- documentation is good, and is required by linters
 
 > ### Exercise 1:
 > fix all the `missing-docstring` pylint errors by documenting
@@ -61,13 +61,28 @@ language's style guide:
 > Now fix the invalid-name errors (need to be more than one char)
 > and constants need to be `LIKE_THIS`
 
-Now that we have fixed most lint errors, we will commit our
-changes and run autopep8. Run `autopep8 flash -r --in-place`
-and run `git diff` to see what it changed. Commit those changes.
-Now run `docformatter flash -r --in-place` and then `git diff`.
-This will fix your docstrings to be standardized.
+Now that we have fixed most lint errors, run your unit tests
+(making sure none fail) and commit your changes. Doing small
+commits is always recommended as you can always edit your commit
+history later. Think of them like "savepoints" in a video game.
+Keep in mind that you can always re-write your commit history to
+be more readable later (as long as you don't push).
 
-Commit your changes and continue onto the next section.
+Now we are going to auto-format our code. Run
+`autopep8 flash -r --in-place` and run `git diff` to see what it changed.
+Commit those changes. Now run `docformatter flash -r --in-place` and then
+`git diff`. This will fix your docstrings to be standardized.
+
+Commit your changes. There is one final thing we should do, and that
+is format your requirements. Run `rst fmt -w`. This will format and
+alphabetize all your design documents (and remove comments, which
+[is a bug][3])
+
+Commit these changes. You are now using industry best practices for
+code cleanliness - your teamates will thank you! Let's continue
+onto the next section where we will actually start designing
+something.
 
 [1]: https://www.python.org/dev/peps/pep-0008/
 [2]: http://pylint-messages.wikidot.com/all-codes
+[3]: https://github.com/vitiral/rst/issues/23

@@ -93,7 +93,7 @@ As long as they are both python2.7.X (but not python3.X), you are good to go.
 
 > If not... python can be very difficult to configure.
 > Search on google on how to have both python2 and python3 installed. You will
-> have to do a similar exercise for `pip`. If you really want to use python3,
+> have to do a similar exercise for `pip`. You can use python3 if you want,
 > it shouldn't be difficult -- you will just have to fix whatever errors come
 > up (there shouldn't be too many).
 
@@ -108,9 +108,7 @@ Now run your unit tests
 py.test flash
 ```
 
-Congratulations, you've written and run some unit tests! I'm sure
-you feel like there is a lot more to learn, and we will learn it in the
-next section.
+Congratulations, you've run unit tests!
 
 [1]: https://git-scm.com/
 [2]: https://git-scm.com/doc
