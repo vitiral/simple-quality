@@ -1,6 +1,5 @@
-# Clean Code
 Before we design and implement the quiz component, let's take stock
-of where we currently are. We have:
+of where we are. We have:
 - functions that can load from either a path or a stream (file-object)
 - a large number of (passing!) unit tests for loading
 - high level requirements for our application and the quizzer itself
@@ -46,13 +45,12 @@ The pylint tool looks at your code an compares it to the
 [pep8 style guide][1]. There are multiple reasons to follow your
 language's style guide:
 - typically the style enforced by the guide is well thought out
-	and the most clear method of doing a particular thing
-- if there is more than one developer on your code-base, it
-	is much easier to read code if it all follows the style
-	guide
+	and the most clear method of doing any particular thing
 - standardization is good -- it makes your team's code more readable
     and writable by everybody involved
-- documentation is good, and is required by linters
+- documentation is good. It allows people who are reading your code to at
+    least know what you were *trying to do* (even if you did a bad job
+    actually doing it!)
 
 > ### Exercise 1:
 > fix all the `missing-docstring` pylint errors by documenting
@@ -70,8 +68,11 @@ be more readable later (as long as you don't push).
 
 Now we are going to auto-format our code. Run
 `autopep8 flash -r --in-place` and run `git diff` to see what it changed.
+Autoformatters are a great way to remove the pain in having standardized
+code.
+
 Commit those changes. Now run `docformatter flash -r --in-place` and then
-`git diff`. This will fix your docstrings to be standardized.
+`git diff`. You will see that your docstrings are now all standardized.
 
 Commit your changes. There is one final thing we should do, and that
 is format your requirements. Run `rst fmt -w`. This will format and
@@ -79,9 +80,9 @@ alphabetize all your design documents (and remove comments, which
 [is a bug][3])
 
 Commit these changes. You are now using industry best practices for
-code cleanliness - your teamates will thank you! Let's continue
-onto the next section where we will actually start designing
-something.
+code cleanliness - your future team mates will thank you! Let's continue
+onto the next section where we will actually build a component from
+scratch.
 
 [1]: https://www.python.org/dev/peps/pep-0008/
 [2]: http://pylint-messages.wikidot.com/all-codes

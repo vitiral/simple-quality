@@ -1,5 +1,7 @@
-# [Software Quality For Developers][1]
-By Garrett Berg
+# [Simple Quality][1]
+*A short guide to quality best practices for developers.*
+
+By Garrett Berg <vitiral@gmail.com>
 
 # Introduction
 This is a short and open-source book aimed towards helping software developers
@@ -15,7 +17,7 @@ and suggestions are always welcome.
 
 The concepts and tools introduced in this book will make developing software
 simpler and more fun. Think back to the time you first learned revision control.
-Think about how you were backing up files before that point. Maybe you were
+Think about how you were backing up files. Maybe you were
 copying folders with the date changed? Maybe you were not backing up at all?
 How catastrophic could one small change be to your entire project?
 
@@ -31,17 +33,10 @@ technical jargon or complex test methodologies to realize huge gains in the qual
 of your software. Some simple vocabulary, new tools and new ways of looking at things
 are all you need to get the same benefits as learning revision control.
 
-> Disclaimer: This book was written to be a supplement to the tutorial for
-> [rst][2], an open source tool developed by the author of this book. All examples in this book
-> are written using rst's open format and rst is used throughout the book
-> as the requirements tracking tool of choice. **rst** is easy to learn and
-> will always remain free to use, so no matter what tracking tool you end up
-> using the concepts taught in this book should translate well.
+> All examples in this book are public domain. Te rest of the book is released
+> under the [GNU GPLv3 License][3].
 
-All examples in this book are public domain. Te rest of the book is released
-under the [GNU GPLv3 License][3].
-
-[1]: https://vitiral.gitbooks.io/software-quality-for-developers/content/
+[1]: https://vitiral.gitbooks.io/simple-quality/content/
 [2]: http://github.com/vitiral/rst
 [3]: https://www.google.com/search?q=gnu+gpl+v3&ie=utf-8&oe=utf-8
 

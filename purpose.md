@@ -1,31 +1,29 @@
-# Purpose Documentation
-
 One of the most critical pieces of documentation that you can write is
 your purpose documentation. Without purpose documentation, it is easy
 to get lost and forget what your project was trying to accomplish in the first
 place. Purpose documentation that is revision controlled will give you a handy
 reference for why certain things were done.
 
-Open up your README.md in your favorite plain-text editor and write
+Open up your `README.md` in your favorite plain-text editor and write
 out the following by hand (don't copy paste):
 
 ```
 ## Purpose:
-Write a flash card quizzer from scratch and learn about quality best
-practices while doing so.
+Write a flash card quizzer from scratch and learn about
+quality best practices while doing so.
 
 The example tutorial can be found here:
     http://wiki.openhatch.org/Flash_card_challenge
 
-It should be easy for users to input questions to the quizzer in a
-simple and open format. Additionally, the quizzer should use
-methodologies that uses effective memorization techniques. Some
-possible ideas include:
-- doing items in a random order
-- doing missed items more often
+It should be easy for users to input questions to the
+quizzer in a simple and open format. Additionally, the
+quizzer should use methodologies that use effective
+memorization techniques. Some possible ideas include:
+- aking items in a random order
 - telling the answer after a guess is missed
-- allowing users to configure time limits, so they can compare
-    results between quizzes.
+- asking items more often if they were answered incorrectly
+- allowing users to configure time limits, so they can
+    compare results between quizzes.
 ```
 
 Notice that we try to keep our purpose documentation as brief and simple

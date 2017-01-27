@@ -1,8 +1,4 @@
-# Vocabulary
-
-It is time we briefly get the vocabulary of design out of the way. Rather than
-just throwing words+definitions at you (I'll leave our flash program to do
-that!), I will try and give a rough history of words and why they come in handy.
+It is time we briefly discuss design vocabulary.
 
 ## Specifying meaning
 It is very important that your design documents have clear meaning. Without
@@ -21,16 +17,17 @@ have meaning in requirements docs:
     **Will** statements are meant to be notes to inform lower layers
     of design or note implementation details about a component.
 - **Should – Goals, non-mandatory provisions:** Should is used to indicate a
-	goal which must be addressed by the design team but is not formally
-	verified. Why include should (goal) statements? Because you may have a very
-	important issue that you want to communicate to the developers, but can’t
-	think of a way to do so in the form of a verifiable requirement. We have
-	already seen an example in our purpose statement: "the [flash-quizzer]
-	**should** use methodologies that uses effective memorization techniques".
-	There is no way to validate that we are using the best methodlogies, but
-	we should aim for that goal.
+    goal which must be addressed by the design team but is not formally
+    verified. Why include should (goal) statements? Because you may have a very
+    important issue that you want to communicate to the developers, but can’t
+    think of a way to do so in the form of a verifiable requirement. We have
+    already seen an example in our purpose statement: "the [flash-quizzer]
+    **should** use methodologies that uses effective memorization techniques".
+    There is no way to validate that we are using the best methodlogies, but
+    we should aim for that goal.
 
-> definitions modified from article at [reqexperts.com][2]
+> Reference: these definitions modified from an article at [reqexperts.com][2]
+> (October 9th, 2012. Lou Wheatcraft)
 
 > ### Exercise 1:
 > Review the documentation we've written so far. When did we use "shall",
@@ -49,7 +46,7 @@ will get you a long way no matter what your job.
 > ### Exercise 2:
 > Read at least the intro for all three wikipedia links above.
 > These are the three testing methodologies that will be used in this
-> tutorial.
+> tutorial, it is good to be familiar with what they mean.
 
 [1]: https://www.agilealliance.org/glossary/definition-of-done/
 [2]: http://reqexperts.com/blog/2012/10/using-the-correct-terms-shall-will-should/

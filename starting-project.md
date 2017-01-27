@@ -28,18 +28,32 @@ say about itself:
 > emphasizes breaking your code on purpose, and in the process teaches a
 > plethora of important topics.
 
-There are four important aspects to the "Learn The Hard Way" method that
+There are three important aspects to the "Learn The Hard Way" method that
 this tutorial will use:
 1. It is designed for absolute beginners: you should know the basics of a
     programming language and revision control, and that's all you need.
 2. It focuses on teaching concepts and tools which are simple and deliver
     immediate real-world value.
-3. It will break down problems into component pieces and then introduce
-    issues and ask you to fix them.
-4. It uses exercises as the primary method that you learn. Only by actually
+3. It uses exercises as the primary method that you learn. Only by actually
     doing them will you understand how the tools and processes you are reading
     are useful. So when you see exercises, like the one below, it is important
     that you do them.
+
+## Before we start
+
+Before we start, install the following tools:
+- [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+- [rst](https://github.com/vitiral/rst/wiki/User-Guide)
+
+Now run the following:
+```
+mkdir ~/quality # or whatever directory you want
+cd ~/quality
+rst tutorial
+git init
+```
+
+This will set up your project as a rst tutorial project and initialize git.
 
 > ### Exercise 1:
 > Create a `README.md` file and take notes while you read the

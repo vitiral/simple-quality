@@ -1,5 +1,3 @@
-# Quiz Component
-
 Now that we have all our tooling set up for running tests
 and writing clean code, we are ready to continue with the
 design of our application. The next component that we
@@ -26,15 +24,15 @@ There are two common designs:
 	like `ask_question()`, which returns a random
 	`Question`. Each time a question is answered it records
 	it in it's internal `Answered` object (it holds state)
-2. the quiz component is two **function** -- one for getting
+2. the quiz component is composed of two **functions** -- one for getting
 	a question and one for asking a question.
 	- `get_question(questions, answered)` takes the list of
 	    `Question` objects and the `Answered` object and outputs
 	    a `Question` randomly based on the weights.
-	- The `ask_question(question)` takes in the Question
-	    and outputs True if it was answered correctly
+	- The `ask_question(question)` takes in the `Question`
+	    and outputs true if it was answered correctly
 	    and false otherwise (interfacing with the user).
-	- the caller then updates the Answer object
+	- the caller then updates the `Answered` object
 	    with the result before it asks another question.
 
 These represent two design paradigms called "object oriented
@@ -55,7 +53,6 @@ software. Most find that as applications get large, functional
 programming is much easier to test and reason about.
 
 > ### Exercise 2:
-> Spend some time researching the advantages of programming
-> in a functional style (or with a functional langauge).
-
-
+> Spend some time researching the differences between functional
+> and object-oriented programming. What things strike you as
+> useful to each style?
