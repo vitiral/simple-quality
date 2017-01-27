@@ -10,4 +10,4 @@
     * [Learning rst](rst.md)
 	* [Clean Code](clean-code.md)
 * [Quiz Component](quiz.md)
-<!--* [Application](app.toml)-->
+	* [Quiz Design](functional.md)

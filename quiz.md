@@ -5,8 +5,6 @@ and writing clean code, we are ready to continue with the
 design of our application. The next component that we
 should develop is the quiz component.
 
-What does the quiz component do? Why don't you tell me?
-
 > ### Exercise 1:
 > What should the "quiz component" do?
 >
@@ -31,13 +29,13 @@ There are two common designs:
 2. the quiz component is two **function** -- one for getting
 	a question and one for asking a question.
 	- `get_question(questions, answered)` takes the list of
-		`Question` objects and the `Answered` object and outputs
-		a `Question` randomly based on the weights.
+	    `Question` objects and the `Answered` object and outputs
+	    a `Question` randomly based on the weights.
 	- The `ask_question(question)` takes in the Question
-		and outputs True if it was answered correctly
-		and false otherwise (interfacing with the user).
+	    and outputs True if it was answered correctly
+	    and false otherwise (interfacing with the user).
 	- the caller then updates the Answer object
-		with the result before it asks another question.
+	    with the result before it asks another question.
 
 These represent two design paradigms called "object oriented
 programming" and "functional programming". Let's take some
