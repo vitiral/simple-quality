@@ -48,8 +48,53 @@ will get you a long way no matter what your job.
 > These are the three testing methodologies that will be used in this
 > tutorial, it is good to be familiar with what they mean.
 
+### Kinds of Unit Testing
+
+### [Functional Testing][5]
+What is the functionality we are programming for? It is important that
+we test at least the basics. This includes the:
+- [boundary conditions][6]: test the extreme inputs and outputs of your
+    function
+- typical use cases: test how the function will typically be used
+    (i.e. a few values in the middle of the boundary conditions)
+- error cases: make sure it throws exception/returns an error when invalid
+    inputs are used. This doesn't have to cover everything -- don't test for
+    invalid types, let integration tests (or better yet, your language's type
+    checker) handle that.
+
+### [White Box Testing][7]
+Look at your code. As the programmer, what kind of inputs are YOU concerned
+about? Spend some time focusing on these.
+
+You as the developer have the most insight into your function, so you are
+probably the most qualified individual for trying to break it. Always observe
+Murphey's law: what can go wrong *will* go wrong. If you can *see* something
+that might break, even if the scenario seems impossible for a user to hit,
+make sure it doesn't break anyway -- because if you can see it it almost
+certainly will happen eventually.
+
+### [Risk Based Testing][8]
+What is the worst thing that your function could do. Can it segfault
+or recurse infinitely? Can it delete user data? Could it crash the whole
+operating system? Can it introduce security vulnerabilities?
+
+It's important to ask what the worst case scenarios are and test for them.
+This is especially true if your program overwrites files or exposes a port
+to the internet -- data loss and security vulnerabilities are serious
+problems that can be introduced in the most simple software
+
+Some of these kind of tests are outside the scope of unit tests -- but if
+you *can* write a unit test for them, or part of them, then you should.
+Otherwise you should try and cover these risks in your integration
+or system tests.
+
+
 [1]: https://www.agilealliance.org/glossary/definition-of-done/
 [2]: http://reqexperts.com/blog/2012/10/using-the-correct-terms-shall-will-should/
 [2]: https://en.wikipedia.org/wiki/Unit_testing
 [3]: https://en.wikipedia.org/wiki/Integration_testing
 [4]: https://en.wikipedia.org/wiki/System_testing
+[5]: https://en.wikipedia.org/wiki/Functional_testing
+[6]: https://en.wikipedia.org/wiki/Boundary_testing
+[7]: https://en.wikipedia.org/wiki/White-box_testing
+[8]: https://en.wikipedia.org/wiki/Risk-based_testing

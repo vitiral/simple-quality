@@ -1,7 +1,7 @@
 With the paradigm of design in hand (functional programming), let's begin
 designing the quiz component
 
-### get_question() function
+## Quiz Module Design
 
 Let's start by turning our brainstorming from the last chapter into
 actual design specifications. Create a new file, at
@@ -29,6 +29,8 @@ which the user previously gave and returns the question to
 ask.
 '''
 ```
+
+## Answered Component
 
 There is still a major component we are missing to our design, and that
 is the `Answered` object.
@@ -67,7 +69,7 @@ following to `design/quiz.toml`
 partof = "SPC-quiz"
 text = '''
 There shall be an `Answered` object which has the following methods:
-- `record(question, answer)`: records the answer to a question internally
+- `record(question, correct)`: records the answer to a question internally
 - `get_hist(question)`: return `(num_right, num_wrong)` answers to a question
 
 If the user requests a question that hasn't been asked, the output shall be
@@ -85,5 +87,113 @@ which uses `question.question` as the keys and has
 > Were there things that you think should have been added to the
 > design specification? If so, feel free to add them.
 
+If you are having trouble with the above exercise, here is my code in
+`flash/quiz.py`:
+
+```
+class Answered(object):
+    """keeps track of question and answer history.
+
+    partof: #SPC-answered
+
+    """
+
+    def __init__(self):
+        self._hist = {}
+
+    def get_hist(self, question):
+        """Return (num_right, num_wrong) of the question."""
+        self._hist.get(question.question, (0, 0))
+
+    def record(self, question, correct):
+        """Record question history."""
+        before = self.get_hist(question)
+        if correct:
+            after = (before[0] + 1, before[1])
+        else:
+            after = (before[0], before[1] + 1)
+        self._hist[question.question] = after
+```
+
+## Implementing `get_question`
+
+`get_question` requires that we get a question at random, but weight
+questions which the user has gotten incorrect.
+
+We want to try and incorporate right and wrong answers into the weight.
+We want right answers to decrease weight and wrong answers to increase
+weight.
+
+Let's take a first stab at something like this
+```
+weight = 1
+weight -= num_correct / total_correct
+weight += num_incorrect / total_incorrect
+```
+
+In other words, the weight is going to be lower (less likely to ask again)
+if the question has been gotten correct many times and higher (more likely
+to ask again) if the question has been gotten incorrect many times.
+
+This is just a first stab, we may want to tweak this later.
+
+> #### Exercise 2:
+> Using the weight formula above, write the `get_question` method.
+>
+> HINT: check out Python's [`random`][2] module.
+>
+> DOUBLE HINT: check out `random.choices`
+
+Here is my initial implementation:
+
+```
+def get_question(questions, answered):
+    """Get a random question weighted by previous answers.
+
+    partof: #SPC-quiz-get
+    """
+    weights = answered.get_weights(questions, answered)
+    return weighted_choice(weights, choices)
+
+
+def weighted_choice(weights, choices):
+    """Get a choice randomly based on the weights.
+
+    taken from:
+        http://stackoverflow.com/questions/3679694
+    """
+    total = sum(weights)
+    r = random.uniform(0, total)
+    upto = 0
+    for c, w in zip(weights, choices):
+        if upto + w >= r:
+            return c
+        upto += w
+    assert False, "Shouldn't get here"
+```
+
+And add the following method to `Answered`:
+```
+def get_weights(self, questions):
+    """Get the question weights based on answers."""
+    total_right = sum(h[0] for h in self._hist.values())
+    total_wrong = sum(h[1] for h in self._hist.values())
+
+    weights = []
+    for question in questions:
+        hist = self.get_hist(question)
+        weight = 1
+        weight -= hist[0] / total_right
+        weight += hist[1] / total_wrong
+        weights.append(weight)
+
+    return weights
+```
+
+If you are clever or used to floating point and python gotchas
+you may notice a couple of mistakes in the above code. Rather than try and
+analyze the code for errors, we are going to find the mistakes
+through unit testing, the subject of the next chapter.
 
 [1]: https://docs.python.org/2/reference/datamodel.html
+[2]: https://docs.python.org/3/library/random.html#module-random

@@ -11,3 +11,5 @@
 	* [Clean Code](clean-code.md)
 * [Quiz Component](quiz.md)
 	* [Quiz Design](quiz-design.md)
+    * [Basic Tests](quiz-test-1.md)
+    * [Testing Randomness](quiz-test-1.md)
