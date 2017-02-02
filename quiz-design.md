@@ -152,7 +152,7 @@ def get_question(questions, answered):
 
     partof: #SPC-quiz-get
     """
-    weights = answered.get_weights(questions, answered)
+    weights = answered.get_weights(questions)
     return weighted_choice(weights, choices)
 
 
@@ -165,7 +165,7 @@ def weighted_choice(weights, choices):
     total = sum(weights)
     r = random.uniform(0, total)
     upto = 0
-    for c, w in zip(weights, choices):
+    for c, w in zip(choices, weights):
         if upto + w >= r:
             return c
         upto += w

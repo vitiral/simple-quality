@@ -29,7 +29,7 @@ import unittest
 from flash.quiz import Answered
 from flash.load import Question
 
-class TestGetQuestion(unittest.TestCase):
+class TestGetWeights(unittest.TestCase):
     def test_weights_empty(self):
         questions = [
             Question("who", "correct"),
@@ -66,7 +66,7 @@ written a single test case. Let's write one more.
 
 So far we have only tested that the function works when the weights are all
 equal, what if one of the questions has some answers right and wrong? Add the
-following test case to `TestGetQuestion` and run it:
+following test case to `TestGetWeights` and run it:
 
 ```
 def test_weights_right(self):
