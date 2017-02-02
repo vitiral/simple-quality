@@ -4,22 +4,25 @@
 By Garrett Berg <vitiral@gmail.com>
 
 # Introduction
-This is a short and open-source book aimed towards helping software developers
-improve their software quality. It is targeted towards an audience that:
-- knows at least one programming language
-- knows revision control. If you don't know one, learn git
-- wants a brief guide on how to have fewer bugs, re-designs and headaches
+This is a short and open-source book aimed at helping software developers
+improve their software quality. It's targeted audience are those who:
+- know at least one programming language
+- know revision control. If you don't know one, learn git
+- want a brief guide on how to have fewer bugs, re-designs and headaches
     in all of their projects
 
 This book can be read in full at **[gitbooks][1]**. It is in a pre-release status,
 so is NOT content-complete or edited as much as the author would like. Comments
 and suggestions are always welcome.
 
-The concepts and tools introduced in this book will make developing software
-simpler and more fun. Think back to the time you first learned revision control.
-Think about how you were backing up files. Maybe you were
-copying folders with the date changed? Maybe you were not backing up at all?
-How catastrophic could one small change be to your entire project?
+If you have suggestions or edits, you should be able to "start a new discussion"
+by hovering over a paragraph and clicking the "+" button to the right of it.
+You can also [open an issue][2]
+
+The goal of this book is to make developing software simpler and more fun.
+Think back to the time you first learned revision control and how
+you were backing up files before then. Maybe you were
+copying folders to some `backups` folder? Maybe you were not backing up at all?
 
 However you did (or didn't) track your changes, think about your life before and after
 revision control. Things were a lot different, and all you had to learn in order
@@ -33,10 +36,10 @@ technical jargon or complex test methodologies to realize huge gains in the qual
 of your software. Some simple vocabulary, new tools and new ways of looking at things
 are all you need to get the same benefits as learning revision control.
 
-> All examples in this book are public domain. Te rest of the book is released
+> All examples in this book are public domain. The rest of the book is released
 > under the [GNU GPLv3 License][3].
 
 [1]: https://vitiral.gitbooks.io/simple-quality/content/
-[2]: http://github.com/vitiral/rst
+[2]: https://github.com/vitiral/simple-quality/issues
 [3]: https://www.google.com/search?q=gnu+gpl+v3&ie=utf-8&oe=utf-8
 

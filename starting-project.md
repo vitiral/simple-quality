@@ -1,14 +1,12 @@
-# A Working Example
-
 The primary teaching method that this book will employ is "learning by doing".
 This is an approach that many developers are familiar with and is used in some
 of the most effective tutorials on software development.
 
-The example project used will be the same as the one used in the [rst][1] tutorial,
-which makes sense because I am the author of that tool and it was designed
-specifically to address the approach to quality defined in this book. We will
+The example project used will be the same as the one used in the [rst][1] tutorial.
+This makes sense because I am also the author of that tool and it was designed
+*specifically* to address the approach to quality defined in this book. We will
 install rst in a later chapter, but just know that while there is definitely
-overlap between the two tutorials, they have very different purposes. rst's
+overlap between the two tutorials, they have very different purposes: rst's
 tutorial is designed to teach the tool, while this is an in-depth tutorial
 to unifying quality best practices.
 
@@ -18,7 +16,6 @@ by open hatch. There are several reasons this project was chosen:
 - It is simple to define and yet can be extremely broad
 - The guide is written in python, a language who's syntax reads largely
     like psuedo code. You should be able to follow along in any language
-    that you are familiar with or are learning.
 
 One of the best tutorials on C, [learn C the hard way][3] has this to
 say about itself:
@@ -36,8 +33,7 @@ this tutorial will use:
     immediate real-world value.
 3. It uses exercises as the primary method that you learn. Only by actually
     doing them will you understand how the tools and processes you are reading
-    are useful. So when you see exercises, like the one below, it is important
-    that you do them.
+    are useful.
 
 ## Before we start
 
@@ -55,7 +51,7 @@ git init
 
 This will set up your project as a rst tutorial project and initialize git.
 
-> ### Exercise 1:
+> ##### Exercise 1:
 > Create a `README.md` file and take notes while you read the
 > [flash card challenge][2] webpage. Pay close attention to:
 > - what is the use case (how will this software be used)?

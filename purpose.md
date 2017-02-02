@@ -1,8 +1,6 @@
-One of the most critical pieces of documentation that you can write is
+One of the most critical pieces of documentation is
 your purpose documentation. Without purpose documentation, it is easy
-to get lost and forget what your project was trying to accomplish in the first
-place. Purpose documentation that is revision controlled will give you a handy
-reference for why certain things were done.
+to get lost and forget what your project was trying to accomplish.
 
 Open up your `README.md` in your favorite plain-text editor and write
 out the following by hand (don't copy paste):

@@ -1,0 +1,8 @@
+{
+    "plugins": [ "ace" ],
+    "pluginsConfig": {
+        "github": {
+            "url": "https://github.com/your/repo"
+        }
+    }
+}

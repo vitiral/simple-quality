@@ -90,7 +90,7 @@ which uses `question.question` as the keys and has
 If you are having trouble with the above exercise, here is my code in
 `flash/quiz.py`:
 
-```
+{%ace edit=false, lang='python'%}
 class Answered(object):
     """keeps track of question and answer history.
 
@@ -112,7 +112,7 @@ class Answered(object):
         else:
             after = (before[0], before[1] + 1)
         self._hist[question.question] = after
-```
+{%endace%}
 
 ## Implementing `get_question`
 
