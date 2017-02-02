@@ -24,8 +24,10 @@ class Question(object):
 
 
 def validate_questions(questions):
-    """given a list of questions, validate them according to spec partof: #SPC-
-    load-validate."""
+    """given a list of questions, validate them according to spec.
+
+    partof: #SPC-load-validate
+    """
     # check for duplicates
     all_qs = [q.question for q in questions]
     seen = set()
@@ -54,7 +56,9 @@ def load_io(open_file):
 
 
 def load_path(path):
-    """given a path, load a list of validated questions partof: #SPC-load-
-    format."""
+    """given a path, load a list of validated questions.
+
+    partof: #SPC-load-format
+    """
     with open(path, 'rb') as open_file:
         return load_io(open_file)

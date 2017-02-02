@@ -95,7 +95,6 @@ class Answered(object):
     """keeps track of question and answer history.
 
     partof: #SPC-answered
-
     """
 
     def __init__(self):
@@ -161,6 +160,8 @@ def weighted_choice(weights, choices):
 
     taken from:
         http://stackoverflow.com/questions/3679694
+
+    partof: #SPC-random
     """
     total = sum(weights)
     r = random.uniform(0, total)

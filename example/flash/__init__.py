@@ -6,12 +6,20 @@ from flash import quiz
 from flash import load
 
 def ask_question(question):
-    """ask a question of the user, returning True if the answer is
-    correct."""
+    """ask a question of the user.
+
+    returns True if the answer is correct
+
+    partof: #SPC-quiz-ask
+    """
     answer = raw_input("{}?: ".format(question.question)).strip().lower()
     return answer == question.answer
 
 def main(cwd, argv):
+    """The executable that is called by the binary.
+
+    partof: #SPC-cmd
+    """
     parser = argparse.ArgumentParser(
         prog='flash',
         description='flash card quizzer')
@@ -24,6 +32,7 @@ def main(cwd, argv):
     while True:
         question = quiz.get_question(questions, answered)
         result = ask_question(question)
+        # see: #SPC-response
         if result:
             print("* Correct! Good job\n")
         else:

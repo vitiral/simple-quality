@@ -14,3 +14,6 @@
     * [Basic Tests](quiz-test-1.md)
     * [Testing Randomness](quiz-test-2.md)
 * [Finish Flash Program](executable.md)
+* [Improvements](improvements.md)
+* [Conclusion](conclusion.md)
+* [Additional Resources](resources.md)]

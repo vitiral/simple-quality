@@ -12,6 +12,7 @@ for validity and an error must be raised if invalid.
 '''
 
 [SPC-load-format]
+partof = "REQ-purpose-config"
 text = '''
 The format of the csv file **shall** be a csv file of the form:
 ```
