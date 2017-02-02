@@ -1,0 +1,4 @@
+[settings]
+artifact_paths = ["{repo}/design"]
+code_paths = ["{repo}/flash"]
+exclude_code_paths = []

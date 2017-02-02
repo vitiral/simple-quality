@@ -1,0 +1,8 @@
+#!/usr/bin/python2
+
+import os
+import sys
+import flash
+
+if __name__ == '__main__':
+    flash.main(os.getcwd(), sys.argv)

@@ -1,0 +1,43 @@
+
+[SPC-quiz]
+partof = "REQ-purpose"
+text = '''
+the quiz component is broken down into the following parts
+'''
+
+[SPC-quiz-ask]
+text = '''
+There shall be an `ask_question(question)` function which
+takes the question to ask and returns whether the user got
+it wrong or right
+'''
+
+[SPC-quiz-get]
+text = '''
+There shall be a `get_question(questions, answered)`
+function which takes a list of questions and the answers
+which the user previously gave and returns the question to
+ask.
+'''
+
+[SPC-answered]
+partof = "SPC-quiz"
+text = '''
+There shall be an `Answered` object which has the following methods:
+- `record(question, answer)`: records the answer to a question internally
+- `get_hist(question)`: return `(num_right, num_wrong)` answers to a question
+
+If the user requests a question that hasn't been asked, the output shall be
+`(0, 0)`
+
+Internally, the `Answered` object will have an `_hist` dict
+which uses `question.question` as the keys and has
+`(num_right, num_wrong)` as the values.
+'''
+
+[TST-quiz-get]
+text = '''
+The unit tests for getting questions should validate that 
+the requirements in `REQ-purpose-learning` are being roughly 
+followed.
+'''

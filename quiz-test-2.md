@@ -45,12 +45,13 @@ followed.
 ```
 
 It is important to keep your requirements up-to-date with the intentions
-of your project and to always update specifications and tests accordingly.
-Notice that we did not create `SPC` or `TST` artifacts for
-`get_weights`. Although we certainly could have, that method and it's
-associated tests were pretty self explanatory. This follows the general
-rule of "keep your design docs simple and short". This means not
-over-specifying your design as this will only convolute your project.
+of your project. Notice that we did not create `SPC` or `TST` artifacts for
+`get_weights`. Although we could have, the code we wrote was
+pretty self explanatory. By not writing design docs, we can keep our
+design docs simple and short. If at a later time the implementation
+starts to get more complicated than you anticipated, you can always go
+back to the drawing board and write docs.
+
 
 ## Writing the Tests
 
@@ -97,10 +98,12 @@ class TestGetQuestion(unittest.TestCase):
 > Create the additional cases for scenario 2 and 3 at the top
 > of this chapter
 
-Here are my answers to exercise 1 (attached to `TestGetQuestion`):
+Here are my answers to exercise 1 (methods of `TestGetQuestion`):
 ```
 def test_coverage_2(self):
-    """Still have coverage even if one answer is wrong several times"""
+    """Still have coverage even if one answer is wrong
+        several times.
+    """
     asked_count = [0 for _ in questions]
     answered = Answered()
     for _ in range(5):
@@ -115,7 +118,8 @@ def test_coverage_2(self):
 
 def test_more_wrong(self):
     """Test that getting an answer wrong will increase the
-    likihood that it gets asked"""
+        likihood that it gets asked.
+    """
     asked_count = [0 for _ in questions]
     answered = Answered()
     # answer the first one wrong 5 times and the
@@ -136,9 +140,25 @@ def test_more_wrong(self):
 ```
 
 > #### Exercise 2:
-> run the above tests and fix any bugs. What did we get wrong?
+> run your unit tests and fix any bugs. What did we get wrong?
 >
-> Answer: with our current design the question will not be asked
-> 3x more than the others. The solution is to lessen the assertion
-> I chose `>= 1.1 * max_asked_right`
+> Answer: with our current design the "wrong question" will *not* be
+> asked 3x more than the others. The solution is to lessen the assertion.
+>
+> I chose `assert asked_count[0] >= 1.1 * max_asked_right`
 
+## Unit Tests Conclusion
+The tests we have written so far only cover the absolute basics
+of the quiz module, however even the tests we *do* have are very helpful
+for feeling confident enough to try and create an minimum viable
+product.
+
+It is a good idea at this point to stop and document a few more
+tests you might make in the future. You can put them in your
+design files or as `TODO`s in your source code -- wherever makes
+sense. It is always best to design tests when you are
+familiar with the source code, and you will never be more familiar
+than right when you *write* the source code.
+
+Make sure to commit your changes before continuing to the next
+chapter.
