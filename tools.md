@@ -1,12 +1,9 @@
-# Shiny New Tools
 Just like revision control best practices would be meaningless without
 a revision control tool like git, design best practices are
-meaningless without a tool to help you track from your requirements to
-your implementation.
+meaningless without a tool to help you track your design documents.
 
 Okay, that isn't *quite* accurate, but it's inaccuracy is the root of why
-design tools have languished so much in the history of software
-development. It is easy to think that your requirements can be
+design tools have languished so much. It is easy to think that your requirements can be
 completely captured in your README, or in code documentation,
 or in unit tests -- but in the end they get captured everywhere
 and nowhere. You end up either repeating intention or forgetting to
@@ -22,8 +19,8 @@ relationships between components.
 
 This is not to say that user (README) and developer (code) documentation
 are not critical to a project's quality: they absolutely are. But they
-should not replace your requirements, design specification or
-testing overview documentation for any but the simplest projects.
+should not replace your requirements, detailed-design or
+testing documents for any but the simplest projects.
 
 Keep in mind that it is always best practice to try and split your
 project into as many small libraries as possible. Simplicity should always be
@@ -36,18 +33,17 @@ their productivity.
 
 ### Revision Control
 This is probably the most essential tool to learn how to use,
-as it allows you to code fearlessly without worrying that past code will
-be "lost." We will be using [git][1] in this tutorial to track our progress at
+as it allows you to code fearlessly without worrying that past efforts will
+be lost. We will be using [git][1] in this tutorial to track our progress at
 each stage.
 
 ### Inline Documentation Renderers
-[Most languages][2] at least have a library that can take inline
-documentation on your functions, classes, etc and translate
-them into rendered and beautiful user docs. Some languages
-support it natively. [rust][3] is a great example, where the
-language-defined syntax will create beautiful developer docs.
-We will be writing python documentation can be natively viewed when importing
-our package from python REPL by calling `help(obj)` and *could* be converted
+[Most languages][2] can take inline documentation on your functions, classes,
+etc and translate them into rendered and beautiful user docs. Some languages
+support it natively, others require a separate library.
+
+We will be writing python documentation can be natively viewed
+on the REPL by calling `help(obj)` and *could* be converted
 using [Spinx][4].
 
 ### Unit Testing
@@ -60,25 +56,28 @@ them.
 When all code is automatically formatted and linted, it is easier
 to read and edit. Also, arguing over whether to use tabs or spaces
 is probably the least productive thing possible. Use the default
-formatters and linters for your project, it is an easy way to make
+formatters and linters for your language, it is an easy way to make
 your code cleaner and simpler.
+
+We will install these in a later chapter.
 
 ### Custom Tooling, Build Systems and Scripting Languages
 Some people believe that the primary responsibility of Software Engineers
 in Test (my job title) is to design test cases. In my opinion, the primary job
 of an SET should be to develop
 processes, tools and frameworks that make the entire organization run
-more efficiently and with higher quality.
+more efficiently, more simply and with higher quality.
 
 This section will be one of the least discussed in this book, but
 it can be the most important for your future development. The problem is
 that it can't really be taught except to say: always look for ways
-you can automate pain points and increase quality. Develop tools that
+you can automate pain points and increase simplicity. Develop tools that
 make it easy to interface with your product, or hook into annoying legacy test
-software, or develop tests in a simpler way, etc.
+software, or develop tests in a simpler way. By making everyone's life easier,
+you will drastically increase quality
 
 ### [rst][7]: the Requirements Tracking Tool Made For Developers
-rst will be our bread and butter for writing and linking components in our
+rst will be our bread and butter for writing and linking our
 design to our source code. This tool was designed specifically to facilitate the
 philosophy of software quality presented in this book. rst will be the topic of
 the next chapter.

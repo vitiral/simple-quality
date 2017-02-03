@@ -17,6 +17,8 @@ it should be considered "complete".
     gets recorded in the requirements and implemented.
 5. Users should also be able to store their report in
     a log.
+6. There are several flags designed in `SPC-cmd`
+    that were not implemented
 
 ## Integration Tests
 There are currently no tests designed or implemented

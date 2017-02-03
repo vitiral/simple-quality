@@ -18,7 +18,7 @@ us to track our progress.
 > git is a fantastic tool, but it is beyond the scope of this guide
 > to give a full tutorial on git or revision control in general.
 > Before proceeding with this guide any further, it is recommended
-> you go through the [git documentation][1]
+> you go through the [git tutorial][1]
 >
 > you can always type `git COMMAND -h` to get help on any command
 >
@@ -37,7 +37,7 @@ There are a few modifications you will want to make to the tutorial:
     sure to include them in your repository.
 
 If you have already completed the rst tutorial, it is safe for you
-to just type `rst tutorial 4` and continue from there. If you have
+to just run `rst tutorial 4` and continue from there. If you have
 not gone through it, it is very short and was specifically crafted
 to fit into this guide. Therefore it is essential that you go through rst's
 tutorial in full before continuing.
@@ -85,18 +85,21 @@ pip 9.0.1 from /usr/lib/python2.7/site-packages (python 2.7)
 As long as they are both python2.7.X (but not python3.X), you are good to go.
 
 > If not... python can be very difficult to configure.
-> Search on google on how to have both python2 and python3 installed. You will
-> have to do a similar exercise for `pip`. You can use python3 if you want,
-> it shouldn't be difficult -- you will just have to fix whatever errors come
-> up (there shouldn't be too many).
+> Search on google for how to have both python2 and python3 installed. You will
+> have to do a similar exercise for `pip`.
 
-Now install py.test, the primary test runner we will be using
+> If it is too much of a pain, you can also just use python3 (or any other language),
+> it shouldn't be difficult -- you will just have to fix any errors that come up.
+>
+> If you are using another language, refer to that language's unit testing guide.
+
+Now install py.test:
 ```
 pip install pytest
 ```
 > you may need to use `sudo`
 
-And run your unit tests
+And run your unit tests:
 ```
 py.test flash
 ```

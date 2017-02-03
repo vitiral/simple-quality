@@ -1,5 +1,5 @@
 With the paradigm of design in hand (functional programming), let's begin
-designing the quiz component
+designing the quiz component.
 
 ## Quiz Module Design
 
@@ -10,15 +10,12 @@ actual design specifications. Create a new file, at
 ```
 [SPC-quiz]
 partof = "REQ-purpose"
-text = '''
-the quiz component is broken down into the following parts
-'''
 
 [SPC-quiz-ask]
 text = '''
 There shall be an `ask_question(question)` function which
 takes the question to ask and returns whether the user got
-it wrong or right
+it right or wrong
 '''
 
 [SPC-quiz-get]
@@ -35,20 +32,20 @@ ask.
 There is still a major component we are missing to our design, and that
 is the `Answered` object.
 
-Let's look at the basics, what does the Answered object do?
+Let's look at the basics, what should the Answered object do?
 - given a question, it returns how many times the question has
     been answered correctly and incorrectly
 - given a question and an answer, it records that question's answer
     internally
 
-Now wait, you might be saying -- if it is recording state isn't that
-not a functional style? And you would be right, it's not! But what we
+Now wait, you might be saying -- recording state isn't functional
+programming! And you would be right, it's not! But what we
 have managed to do is keep all state at our *top layer*. As long as the
-`Answered` object never gets mutated in a lower layer only, then all our lower
+`Answered` object never gets mutated in a lower layer, then all our lower
 layers remain simple and easy to reason about.
 
-One of the first things to notice is that `Answered` is going to have
-to perform an internal lookup from `Question` -> `Answer`. Normally,
+One of the first things to notice is that `Answered` will perform an internal
+lookup from `Question` -> `Answer`. Normally,
 this is best done by an object called a `dict` in python or a `HashMap`
 in other languages. `dict`s offer `O(1)` lookup time, or lookup
 time that does not depend on the number of items in the `dict`.
@@ -58,8 +55,8 @@ Can we use our Question objects as keys in a dictionary? No, we can't -- only
 
 But wait... does our `Answered` object really need to know the *answers* to the
 questions, or does it only need to know the question itself? The
-`Question.question` attribute *is* immutable (it is a `str` type) and so
-*can* be the keys for our `dict`!
+`Question.question` attribute *is* immutable (it is a `str` type) and therefore
+can be used as keys for our `dict`!
 
 With this knowledge in hand, let's create our specification. Add the
 following to `design/quiz.toml`
@@ -68,14 +65,17 @@ following to `design/quiz.toml`
 [SPC-answered]
 partof = "SPC-quiz"
 text = '''
-There shall be an `Answered` object which has the following methods:
-- `record(question, correct)`: records the answer to a question internally
-- `get_hist(question)`: return `(num_right, num_wrong)` answers to a question
+There shall be an `Answered` object which has the following
+methods:
+- `record(question, correct)`: records the answer to a
+    question internally
+- `get_hist(question)`: return `(num_right, num_wrong)`
+    answers to a question
 
-If the user requests a question that hasn't been asked, the output shall be
-`(0, 0)`
+If the user requests a question that hasn't been asked,
+the output shall be `(0, 0)`
 
-Internally, the `Answered` object will have an `_hist` dict
+Internally, the `Answered` object will have a `_hist` dict
 which uses `question.question` as the keys and has
 `(num_right, num_wrong)` as the values.
 ```
@@ -101,7 +101,7 @@ class Answered(object):
         self._hist = {}
 
     def get_hist(self, question):
-        """Return (num_right, num_wrong) of the question."""
+        """Return (num_right, num_wrong)."""
         self._hist.get(question.question, (0, 0))
 
     def record(self, question, correct):
@@ -139,15 +139,15 @@ This is just a first stab, we may want to tweak this later.
 > #### Exercise 2:
 > Using the weight formula above, write the `get_question` method.
 >
-> HINT: check out Python's [`random`][2] module.
->
-> DOUBLE HINT: check out `random.choices`
+> HINT: check out Python's [`random`][2] module and this link:
+        http://stackoverflow.com/questions/3679694
 
 Here is my initial implementation:
 
-```
+{%ace edit=false, lang='python'%}
 def get_question(questions, answered):
-    """Get a random question weighted by previous answers.
+    """Get a random question weighted by
+    previous answers.
 
     partof: #SPC-quiz-get
     """
@@ -171,14 +171,17 @@ def weighted_choice(weights, choices):
             return c
         upto += w
     assert False, "Shouldn't get here"
-```
+{%endace%}
 
 And add the following method to `Answered`:
-```
+{%ace edit=false, lang='python'%}
 def get_weights(self, questions):
-    """Get the question weights based on answers."""
-    total_right = sum(h[0] for h in self._hist.values())
-    total_wrong = sum(h[1] for h in self._hist.values())
+    """Get the question weights based on answers.
+    """
+    total_right = sum(
+        h[0] for h in self._hist.values())
+    total_wrong = sum(
+        h[1] for h in self._hist.values())
 
     weights = []
     for question in questions:
@@ -189,7 +192,7 @@ def get_weights(self, questions):
         weights.append(weight)
 
     return weights
-```
+{%endace%}
 
 If you are clever or used to floating point and python gotchas
 you may notice a couple of mistakes in the above code. Rather than try and

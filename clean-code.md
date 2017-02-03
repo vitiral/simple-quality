@@ -5,11 +5,12 @@ of where we are. We have:
 - high level requirements for our application and the quizzer itself
 - a "Question" class that we can build off of
 
-Here are a few rules to good design that the load component followed
+Here are a few rules of good design that the load component followed
 well:
 - it verified data before passing it to the layer above it
 - it converted data into an object. This makes it harder to have
     errors like InvalidKey, etc.
+- it wrote extensive unit tests
 
 Some things it did not do well:
 - it didn't run any linters or formatters
@@ -44,10 +45,10 @@ C: 72, 4: Missing method docstring (missing-docstring)
 The pylint tool looks at your code an compares it to the
 [pep8 style guide][1]. There are multiple reasons to follow your
 language's style guide:
-- typically the style enforced by the guide is well thought out
-	and the most clear method of doing any particular thing
-- standardization is good -- it makes your team's code more readable
-    and writable by everybody involved
+- the style enforced by the guide is well thought out
+	and typically the most clear way to do any particular thing
+- standardization is good -- it helps make your team's code more readable
+    by everybody involved
 - documentation is good. It allows people who are reading your code to at
     least know what you were *trying to do* (even if you did a bad job
     actually doing it!)
@@ -66,16 +67,24 @@ history later. Think of them like "savepoints" in a video game.
 Keep in mind that you can always re-write your commit history to
 be more readable later (as long as you don't push).
 
-Now we are going to auto-format our code. Run
-`autopep8 flash -r --in-place` and run `git diff` to see what it changed.
-Autoformatters are a great way to remove the pain in having standardized
-code.
+Now we are going to auto-format our code. Run:
+```
+autopep8 flash -r --in-place
+```
 
-Commit those changes. Now run `docformatter flash -r --in-place` and then
-`git diff`. You will see that your docstrings are now all standardized.
+Run `git diff` to see what changed. Autoformatters are a great way standardize
+code without pain.
+
+Commit those changes. Now run:
+```
+docformatter flash -r --in-place
+```
+
+Run `git diff` again. You will see that your docstrings are now all
+standardized.
 
 Commit your changes. There is one final thing we should do, and that
-is format your requirements. Run `rst fmt -w`. This will format and
+is to format your design docs. Run `rst fmt -w`. This will format and
 alphabetize all your design documents (and remove comments, which
 [is a bug][3])
 

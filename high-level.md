@@ -1,14 +1,12 @@
 Once you know the purpose of your project, it is important for you to write
-down the approach you plan to take, as well as list a few alternative
-approaches. This is important because:
-- There may be gaps where you don't work on your project. If you go on vacation
+down the approach you plan to take. This is important because:
+- There may be gaps when you don't work on your project. If you go on vacation
     for a month, having a reference of your thoughts at the time you were
-    focused can jumpstart your productivity when you return.
+    focused can jumpstart your productivity.
 - It is important to be able to reference a design doc for new contributors
-    and newbie developers, it helps them understand the design process
-    as a whole.
+    and newbie developers.
 
-Your high level requirements should go in `README.md`, just below your purpose
+Your high level requirements should go in your `README.md`, just below your purpose
 section:
 
 ```

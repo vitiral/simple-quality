@@ -4,8 +4,8 @@ right? Randomness certainly makes items more difficult to test, but not
 impossible.
 
 But we are getting ahead of ourselves. By breaking `get_question` up into
-deterministic pieces (as `get_question_weights` does), we can then test those
-pieces much more easily. This is where we will start.
+deterministic pieces (as `get_question_weights` does), we can test those
+pieces much more easily.
 
 ## Basic Functionality Tests
 
@@ -14,8 +14,8 @@ pieces much more easily. This is where we will start.
 > as expected. There are two bugs, can you find them?
 >
 > - Hint 1: try running it with a few questions and a new `Answered` object.
-> - Hint 2: try running it with a single question right+wrong and another
->       question not asked.
+> - Hint 2: try running it with a single question right twice and another
+>   right only once
 
 The first thing we want to do is write some very basic tests for our
 deterministic components, in this case `get_question_weights`.
@@ -24,7 +24,7 @@ The first, most basic test is to input a couple of questions that have
 not been asked and expect their weights to both be 1. Create a file at:
 `flash/tests/test_quiz.py`:
 
-```
+{%ace edit=false, lang='python'%}
 import unittest
 from flash.quiz import Answered
 from flash.load import Question
@@ -39,7 +39,7 @@ class TestGetWeights(unittest.TestCase):
         answered = Answered()
         weights = answered.get_weights(questions)
         assert weights == [1, 1]
-```
+{%endace%}
 
 Now run the test with: `py.test flash/tests/test_quiz.py`. You should get
 a `ZeroDivisionError`.
@@ -48,27 +48,29 @@ Whoops! Something in our design wasn't quite right -- we never accounted for
 what to do if `total_right` or `total_wrong` was zero!
 
 In `quiz.py`, change these lines:
-```
+
+{%ace edit=false, lang='python'%}
 weight -= hist[0] / total_right
 weight += hist[1] / total_wrong
-```
+{%endace%}
+
 To this:
-```
+
+{%ace edit=false, lang='python'%}
 if total_right:
     weight -= hist[0] / total_right
 if total_wrong:
     weight += hist[1] / total_wrong
-```
+{%endace%}
 
 And try running the test again -- it should pass. Horray! This function
-works... or does it? It's hard to say for sure -- after all we have only
-written a single test case. Let's write one more.
+works... or does it? It's hard to say for sure -- after all we only
+wrote a single test case. Let's write one more.
 
-So far we have only tested that the function works when the weights are all
-equal, what if one of the questions has some answers right and wrong? Add the
-following test case to `TestGetWeights` and run it:
+This test requires a bit of knowledge about the gotchas of python.
+What happens if some of the weights should be floats?
 
-```
+{%ace edit=false, lang='python'%}
 def test_weights_right(self):
     """Assert values are correct when you get some answers
     right more than others."""
@@ -91,23 +93,24 @@ def test_weights_right(self):
 
     weights = answered.get_weights(questions)
     assert weights == expected
-```
+{%endace%}
 
 After running the tests, you will see that the result is NOT as you expected.
-Why is this? The bug is because when you do `int / int` in python the result is an int,
-not a float as you might expect from algebra.
+Why is this? The bug is because when you do `int / int` in python the result is an
+`int`, not a float as you might expect from algebra.
 
-> note: if you were using python3, you would not hit this bug
+> note: if you were using python3, you would not hit this bug.
+> All division in python3 results in a float.
 
 Go and fix the bug in `get_weights` by multiplying all values by `1.0`
 before dividing:
 
-```
+{%ace edit=false, lang='python'%}
 if total_right:
     weight -= hist[0] * 1.0 / total_right
 if total_wrong:
     weight += hist[1] * 1.0 / total_wrong
-```
+{%endace%}
 
 At last, our basic functional tests should pass.
 

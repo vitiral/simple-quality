@@ -9,7 +9,7 @@ the quiz component is broken down into the following parts
 text = '''
 There shall be an `ask_question(question)` function which
 takes the question to ask and returns whether the user got
-it wrong or right
+it right or wrong
 '''
 
 [SPC-quiz-get]
