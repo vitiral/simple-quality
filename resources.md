@@ -4,12 +4,32 @@
 Stackoverflow is the goto place to get your programming questions answered.
 If you've never heard of it, check it out.
 
+[1]: http://stackoverflow.com/
+
+### Text Editors
+Make sure whatever text editor you are using has *at least* code highlighting
+and can write in plain-text (don't use Microsoft Word!).
+
+Other than that, here are some that I like:
+- [vim][30]: regardless of whether you actually use this as your editor,
+    vim-mode is probably the best way to be productive in any editor.
+- [spacemacs][31] (emacs): super-charged emacs with excellent vim mode
+- [sublime][32]: I've never personally used this but I've heard it's
+    excellent
+
+[30]: http://www.vim.org/
+[31]: https://github.com/syl20bnr/spacemacs
+[32]: http://www.sublimetext.com/
+
 ### rst
+
 #### [Wiki][2]
 On the rst wiki you can find the full user documentation for
 rst as well as how do do things like run a web-server to
 edit requirements on the web -- something that is
 very important for teams that include non-developers.
+
+[2]: https://github.com/vitiral/rst/wiki
 
 #### Enterprise Plugins
 There are plans in the near future to release enterprise plugins for
@@ -22,6 +42,9 @@ agile is a highly efficient way to work together.
 
 - [Agile 101][20]
 - [Zenhub Plugin for Github][21]
+
+[20]: https://www.agilealliance.org/agile101/
+[21]: https://www.zenhub.com/
 
 ### Programming Languages That Help Improve Quality
 I love programming languages that are expressive, fast and safe.
@@ -59,10 +82,5 @@ I especially recommend it if you've never programmed in a functional
 language before, as learning one can really increase your programming
 chops.
 
-[1]: http://stackoverflow.com/
-[2]: https://github.com/vitiral/rst/wiki
-
-[20]: https://www.agilealliance.org/agile101/
-[21]: https://www.zenhub.com/
 [40]: https://www.rust-lang.org/en-US/
 [41]: http://elm-lang.org/
