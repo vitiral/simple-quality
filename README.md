@@ -5,7 +5,7 @@ By Garrett Berg <vitiral@gmail.com>
 
 # Introduction
 This is a short and open-source book aimed at helping software developers
-improve their software quality. It's targeted audience are those who:
+improve their software quality. Its targeted audience are those who:
 - know at least one programming language
 - know revision control. If you don't know one, learn git
 - want a brief guide on how to have fewer bugs, re-designs and headaches
