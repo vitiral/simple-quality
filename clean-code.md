@@ -84,7 +84,7 @@ Run `git diff` again. You will see that your docstrings are now all
 standardized.
 
 Commit your changes. There is one final thing we should do, and that
-is to format your design docs. Run `rst fmt -w`. This will format and
+is to format your design docs. Run `artifact fmt -w`. This will format and
 alphabetize all your design documents (and remove comments, which
 [is a bug][3])
 
@@ -95,4 +95,4 @@ scratch.
 
 [1]: https://www.python.org/dev/peps/pep-0008/
 [2]: http://pylint-messages.wikidot.com/all-codes
-[3]: https://github.com/vitiral/rst/issues/23
+[3]: https://github.com/vitiral/artifact/issues/23

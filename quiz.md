@@ -6,7 +6,7 @@ should develop is the quiz component.
 > ##### Exercise 1:
 > What should the "quiz component" do?
 >
-> Using rst, write down the high level design docs of the quiz component
+> Using artifact, write down the high level design docs of the quiz component
 
 ## Designing To Test
 

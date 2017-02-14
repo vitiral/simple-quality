@@ -25,9 +25,9 @@ This is the development outline for this book.
     - Using revision control
     - Developing unit tests
     - discuss "README requirements"
-    - rst
-- rst: follow the tutorial for the load component
-    - recap rst and pick up where it left off
+    - artifact
+- artifact: follow the tutorial for the load component
+    - recap artifact and pick up where it left off
 - Detailed design
     - craft detailed design for the command line
     - craft design for the "question asker" object

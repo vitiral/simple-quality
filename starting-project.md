@@ -2,11 +2,11 @@ The primary teaching method that this book will employ is "learning by doing".
 This is an approach that many developers are familiar with and is used in some
 of the most effective tutorials on software development.
 
-The example project used will be the same as the one used in the [rst][1] tutorial.
+The example project used will be the same as the one used in the [artifact][1] tutorial.
 This makes sense because I am also the author of that tool and it was designed
 *specifically* to address the approach to quality defined in this book. We will
-install rst in a later chapter, but just know that while there is definitely
-overlap between the two tutorials, they have very different purposes: rst's
+install artifact in a later chapter, but just know that while there is definitely
+overlap between the two tutorials, they have very different purposes: artifact's
 tutorial is designed to teach the tool, while this is an in-depth tutorial
 to unifying quality best practices.
 
@@ -39,17 +39,17 @@ this tutorial will use:
 
 Before we start, install the following tools:
 - [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-- [rst](https://github.com/vitiral/rst/wiki/User-Guide)
+- [artifact](https://github.com/vitiral/artifact/wiki/User-Guide)
 
 Now run the following:
 ```
 mkdir ~/quality # or whatever directory you want
 cd ~/quality
-rst tutorial
+art tutorial
 git init
 ```
 
-This will set up your project as a rst tutorial project and initialize git.
+This will set up your project as a art tutorial project and initialize git.
 
 > ##### Exercise 1:
 > Create a `README.md` file and take notes while you read the
@@ -60,6 +60,6 @@ This will set up your project as a rst tutorial project and initialize git.
 > Then write a paragraph answering the question "how would I develop
 > this application, knowing only what I know now?"
 
-[1]: https://github.com/vitiral/rst
+[1]: https://github.com/vitiral/artifact
 [2]: http://wiki.openhatch.org/Flash_card_challenge
 [3]: https://learncodethehardway.org/c/

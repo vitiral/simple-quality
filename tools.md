@@ -76,10 +76,10 @@ make it easy to interface with your product, or hook into annoying legacy test
 software, or develop tests in a simpler way. By making everyone's life easier,
 you will drastically increase quality
 
-### [rst][7]: the Requirements Tracking Tool Made For Developers
-rst will be our bread and butter for writing and linking our
+### [artifact][7]: the Requirements Tracking Tool Made For Developers
+artifact will be our bread and butter for writing and linking our
 design to our source code. This tool was designed specifically to facilitate the
-philosophy of software quality presented in this book. rst will be the topic of
+philosophy of software quality presented in this book. artifact will be the topic of
 the next chapter.
 
 [1]: https://git-scm.com/
@@ -88,4 +88,4 @@ the next chapter.
 [4]: http://www.sphinx-doc.org/en/1.5.1/
 [5]: https://docs.python.org/3.6/library/unittest.html
 [6]: http://doc.pytest.org/en/latest/
-[7]: https://github.com/vitiral/rst
+[7]: https://github.com/vitiral/artifact

@@ -1,6 +1,6 @@
 
 Before we do anything else, let's start using git to track
-our progress. Since rst tracks design docs which are written
+our progress. Since artifact tracks design docs which are written
 in plain text, you can (and should) use revision control to
 track the evolution of your design documents.
 
@@ -25,10 +25,10 @@ us to track our progress.
 > The rest of the tutorial will assume you have a working knowledge
 > of git commands and what their purpose is
 
-## rst tutorial
-The rst tutorial and this book have been developed together to
+## art tutorial
+The art tutorial and this book have been developed together to
 work off of each other. Therefore, we are going to use the
-interactive tutorial provided by rst and then build off of it.
+interactive tutorial provided by artifact and then build off of it.
 
 There are a few modifications you will want to make to the tutorial:
 - before continuing onto the next stage, always commit the changes
@@ -36,18 +36,18 @@ There are a few modifications you will want to make to the tutorial:
 - take notes during the process at the top of your README and be
     sure to include them in your repository.
 
-If you have already completed the rst tutorial, it is safe for you
-to just run `rst tutorial 4` and continue from there. If you have
+If you have already completed the art tutorial, it is safe for you
+to just run `art tutorial 4` and continue from there. If you have
 not gone through it, it is very short and was specifically crafted
-to fit into this guide. Therefore it is essential that you go through rst's
+to fit into this guide. Therefore it is essential that you go through artifact's
 tutorial in full before continuing.
 
 > ### Exercise 1:
-> when you ran `rst tutorial` in the [Starting Project](starting-project.md)
-> section, rst launched a `tutorial.toml` file which is a self-documenting
+> when you ran `art tutorial` in the [Starting Project](starting-project.md)
+> section, artifact launched a `tutorial.toml` file which is a self-documenting
 > design file. Read through it and follow the instructions.
 >
-> The next stage, `rst tutorial 2`, will launch a `tutorial.md` file
+> The next stage, `art tutorial 2`, will launch a `tutorial.md` file
 > which can also be [viewed on the web][2]. Read through it and
 > follow the instructions until you have completed through part 5 (all of it)
 
@@ -55,7 +55,7 @@ tutorial in full before continuing.
 
 Roll back the tutorial and commit your changes.
 ```
-rst tutorial 4
+art tutorial 4
 git add *
 git commit -m "continuing quality book tutorial"
 ```
@@ -65,7 +65,7 @@ Also, add `*.pyc` to your `.gitignore` file to ignore the python compiled files.
 We are running the tutorial in part 4 so that there are no
 errors when we are starting out (part 5 is about debugging errors).
 
-If you followed along with the rst interactive tutorial, you should
+If you followed along with the artifact interactive tutorial, you should
 feel pretty confident by now that our load component is well designed
 and *should* be implemented and tested. However, you haven't actually run any
 code yet, so you can't be sure! We are going to change that.
@@ -107,4 +107,4 @@ py.test flash
 Congratulations, you've run unit tests!
 
 [1]: https://git-scm.com/doc
-[2]: https://github.com/vitiral/rst/blob/master/src/cmd/data/tutorial.md
+[2]: https://github.com/vitiral/artifact/blob/master/src/cmd/data/tutorial.md

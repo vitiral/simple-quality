@@ -4,8 +4,8 @@ it should be considered "complete".
 
 ## Basic Features That Can Be Added
 1. Make sure all items in the design are done by running
-    `rst ls -c '<99'`
-2. Try running `rst ls -t '<99'` -- this should show you that
+    `art ls -c '<99'`
+2. Try running `art ls -t '<99'` -- this should show you that
     there are several items that we don't consider to be
     completely tested
 3. Currently the user exits with `Cntrl+C`, which is fine.

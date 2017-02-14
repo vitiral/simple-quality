@@ -3,7 +3,7 @@ your purpose documentation. Without purpose documentation, it is easy
 to get lost and forget what your project was trying to accomplish.
 
 We are going to start by writing our requirements in our `README.md`.
-Later we are going to use rst to track them.
+Later we are going to use artifact to track them.
 
 Open up your `README.md` in your favorite plain-text editor and write
 out something like the following:

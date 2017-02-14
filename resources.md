@@ -21,19 +21,19 @@ Other than that, here are some that I like:
 [31]: https://github.com/syl20bnr/spacemacs
 [32]: http://www.sublimetext.com/
 
-### rst
+### artifact
 
 #### [Wiki][2]
-On the rst wiki you can find the full user documentation for
-rst as well as how do do things like run a web-server to
+On the artifact wiki you can find the full user documentation for
+artifact as well as how do do things like run a web-server to
 edit requirements on the web -- something that is
 very important for teams that include non-developers.
 
-[2]: https://github.com/vitiral/rst/wiki
+[2]: https://github.com/vitiral/artifact/wiki
 
 #### Enterprise Plugins
 There are plans in the near future to release enterprise plugins for
-`rst` in tools like JIRA and Zenhub that would help to support the project.
+`artifact` in tools like JIRA and Zenhub that would help to support the project.
 Stay tuned.
 
 ### Agile Resources
@@ -64,10 +64,10 @@ safe and concurrent -- while still being incredibly fun to write.
 I was a python fanatic until spending a month learning rust. It is
 well worth learning.
 
-rst is written in rust.
+artifact is written in rust.
 
 #### [elm][41]
-The web front-end for rst is written in elm, an ultra simple functional
+The web front-end for artifact is written in elm, an ultra simple functional
 programming language designed to (you guessed it) write web front-ends.
 
 Like rust (or any functional language) it is impossible

@@ -7,7 +7,7 @@
     * [High Level Design](high-level.md)
 * [Vocabulary](vocabulary.md)
 * [Shiny New Tools](tools.md)
-    * [Learning rst](rst.md)
+    * [Learning artifact](artifact.md)
 	* [Clean Code](clean-code.md)
 * [Quiz Component](quiz.md)
 	* [Quiz Design](quiz-design.md)
