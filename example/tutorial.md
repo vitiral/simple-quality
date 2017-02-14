@@ -168,7 +168,7 @@ there for TST artifacts.
    `design/`. Notice that invalid names blink red on your terminal and you get
     WARN messages. You can use this feature to help you ensure your artifact
     links are correct.
- 3. we will be learning about `rst check` in the next step. Try it now with
+ 3. we will be learning about `art check` in the next step. Try it now with
     the changes you've made
 
 
@@ -201,7 +201,7 @@ Holy errors batman, That's a lot of red!
 
 We can see that `rst ls` is not the right tool for the job -- from looking at
 the number of errors, it would be very difficult to know where we need to
-start. `rst check` is the command we want. It analyzes your project for
+start. `art check` is the command we want. It analyzes your project for
 errors and displays them in a way that makes them easier to fix. Some of
 the errors it finds are:
 
@@ -209,17 +209,17 @@ the errors it finds are:
     forgot to update artifacts that were parts of it, this will help you.
  - dangling locations in code: you might THINK writing `#SPC-awesome-func`
     in your code links to something, but unless that spec actually exists
-    it isn't doing anything. `rst check` has your back.
+    it isn't doing anything. `art check` has your back.
  - recursive links: rst's completeness algorithm doesn't work if there are
     recursive partof links (i.e. A is partof B which is partof A)
-    `rst check` will help you narrow down where these are comming from.
+    `art check` will help you narrow down where these are comming from.
  - hanging artifacts: if you've written a SPC but haven't linked
     it to a REQ, then you probably want to (otherwise what exactly are you
     specifying?). The same goes for tests that are not testing any specs or
     risks.
 
 > ### Exercise:
-> use `rst check` to find errors and fix them. Keep running `rst check` and
+> use `art check` to find errors and fix them. Keep running `art check` and
 > fixing errors until there are no errors, then run `rst ls` to see if the
 > current status makes sense.
 
@@ -260,7 +260,7 @@ Here are a few parting words of advice:
       general users.
  2. Keep your artifacts fairly high level -- don't try to design every detail
       using rst. Using rst does not mean that you shouldn't use code comments!
- 3. Use `rst ls` and `rst check` often, and fix those error messages!
+ 3. Use `rst ls` and `art check` often, and fix those error messages!
  4. Keep names short and simple. Avoid unnecessary nesting. If you have web and
       cmdline ui elements, consider naming them just `REQ-web` and `REQ-cmd`
       instead of `REQ-ui-web` and `REQ-ui-cmd`. Trying to nest too deep can
