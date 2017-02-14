@@ -76,7 +76,7 @@ make it easy to interface with your product, or hook into annoying legacy test
 software, or develop tests in a simpler way. By making everyone's life easier,
 you will drastically increase quality
 
-### [artifact][7]: the Requirements Tracking Tool Made For Developers
+### [artifact][7]: the design doc tool made for developers
 artifact will be our bread and butter for writing and linking our
 design to our source code. This tool was designed specifically to facilitate the
 philosophy of software quality presented in this book. artifact will be the topic of
