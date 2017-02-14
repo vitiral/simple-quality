@@ -20,8 +20,8 @@ by hovering over a paragraph and clicking the "+" button to the right of it.
 You can also [open an issue][2]
 
 The goal of this book is to make developing software simpler and more fun.
-Think back to the time you first learned revision control and how
-you were backing up files before then. Maybe you were
+Think back to the time you first learned revision control. How
+you were backing up files before then? Maybe you were
 copying folders to some `backups` folder? Maybe you were not backing up at all?
 
 However you did (or didn't) track your changes, think about your life before and after
@@ -31,13 +31,13 @@ to use revision control were:
 - an easy to use tool
 - a new way of looking at things
 
-This is the central premises of this book: you don't need to understand
+This is the central premise of this book: you don't need to understand
 technical jargon or complex test methodologies to realize huge gains in the quality
 of your software. Some simple vocabulary, new tools and new ways of looking at things
-are all you need to get the same benefits as learning revision control.
+are all you need.
 
-> All examples in this book are public domain. The rest of the book is released
-> under the [GNU GPLv3 License][3].
+> All code/documentation examples in this book are public domain. The rest of
+> the book is licensed under the [GNU GPLv3 License][3].
 
 [1]: https://vitiral.gitbooks.io/simple-quality/content/
 [2]: https://github.com/vitiral/simple-quality/issues
