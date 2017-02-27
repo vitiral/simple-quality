@@ -3,24 +3,25 @@ finished. There are still many things that can be done before
 it should be considered "complete".
 
 ## Basic Features That Can Be Added
-1. export our design docs with `art export html`
-2. host it on github using [github pages][5]
-1. Make sure all items in the design are done by running
+1. export our design docs with `art export html` (you can open `index.html` in a
+   browser)
+2. host design docs on github using [github pages][5]
+3. Make sure all items in the design are done by running
     `art ls -c '<99'`
-2. Try running `art ls -t '<99'` -- this should show you that
+4. Try running `art ls -t '<99'` -- this should show you that
     there are several items that we don't consider to be
     completely tested
-3. Currently the user exits with `Cntrl+C`, which is fine.
+5. Currently the user exits with `Cntrl+C`, which is fine.
     Try catching the [`KeyboardInterrupt`][1] exception
     and handling it more gracefully.
-4. Speaking of exiting, we record how many answers
+6. Speaking of exiting, we record how many answers
     a user got right and wrong, but we don't print out
     any kind of report on exiting! Add requirements
     for doing so (can just go in purpose if you want)
     and implement that.
-5. Users should also be able to store their report in
+7. Users should also be able to store their report in
     a log file -- add a flag for that.
-6. There are several flags designed in `SPC-cmd`
+8. There are several flags designed in `SPC-cmd`
     that were not implemented
 
 ## Integration Tests
