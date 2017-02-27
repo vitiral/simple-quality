@@ -27,29 +27,36 @@ clear meaning, it is difficult to know your [definition of done][1].
 **Reference**: these definitions are modified from an article at
 [reqexperts.com][2] (October 9th, 2012. Lou Wheatcraft)
 
+[1]: https://www.agilealliance.org/glossary/definition-of-done/
+[2]: http://reqexperts.com/blog/2012/10/using-the-correct-terms-shall-will-should/
+
 > ##### Exercise 1:
 > Review the documentation we've written so far. When did we use "shall",
 > "will" and "should"? Did we use them correctly?
 
 ## Testing your software
 There are three main categories of testing every developer should know:
-- [unit testing][3] which is testing isolated pieces of code
-- [integration testing][4] which is testing modules of your code integrated
+- [unit testing][10] which is testing isolated pieces of code
+- [integration testing][11] which is testing modules of your code integrated
 	together, but not the entire application
-- [system testing][5], also known as end-to-end testing.
+- [system testing][12], also known as end-to-end testing.
 
 > ##### Exercise 2:
 > Read at least the intro for all three wikipedia links above.
+
+[10]: https://en.wikipedia.org/wiki/Unit_testing
+[11]: https://en.wikipedia.org/wiki/Integration_testing
+[12]: https://en.wikipedia.org/wiki/System_testing
 
 ### Testing Methodologies
 
 The above specify which pieces of your software should be tested,
 these specify how to determine what tests to write.
 
-#### [Functional Testing][5]
+#### [Functional Testing][20]
 What is the functionality we are programming for? It is important that
 we test at least the basics. This includes the:
-- [boundary conditions][6]: test the extreme inputs and outputs of your
+- [boundary conditions][21]: test the extreme inputs and outputs of your
     function
 - typical use cases: test how the function or application will typically be used
     (i.e. a few values in the middle of the boundary conditions)
@@ -57,7 +64,7 @@ we test at least the basics. This includes the:
     inputs are used. This should also test that your application can recover
     in case of recoverable faults.
 
-#### [White Box Testing][7]
+#### [White Box Testing][22]
 Look at your code. As the programmer, what kind of inputs are YOU concerned
 about? Spend some time focusing on these.
 
@@ -67,7 +74,7 @@ break it. Always observe Murphey's law: **what can go wrong will go wrong.**
 If you can see something that might break, even if the scenario seems
 impossible for a user to hit, make sure it doesn't break anyway.
 
-#### [Risk Based Testing][8]
+#### [Risk Based Testing][23]
 What is the worst thing that your function/application could do. Can it
 segfault? Can it recurse infinitely? Can it delete user data? Could it crash
 the whole operating system? Can it introduce security vulnerabilities?
@@ -78,12 +85,7 @@ to the internet -- data loss and security vulnerabilities are serious
 problems that can be introduced in the most simple software.
 
 
-[1]: https://www.agilealliance.org/glossary/definition-of-done/
-[2]: http://reqexperts.com/blog/2012/10/using-the-correct-terms-shall-will-should/
-[2]: https://en.wikipedia.org/wiki/Unit_testing
-[3]: https://en.wikipedia.org/wiki/Integration_testing
-[4]: https://en.wikipedia.org/wiki/System_testing
-[5]: https://en.wikipedia.org/wiki/Functional_testing
-[6]: https://en.wikipedia.org/wiki/Boundary_testing
-[7]: https://en.wikipedia.org/wiki/White-box_testing
-[8]: https://en.wikipedia.org/wiki/Risk-based_testing
+[20]: https://en.wikipedia.org/wiki/Functional_testing
+[21]: https://en.wikipedia.org/wiki/Boundary_testing
+[22]: https://en.wikipedia.org/wiki/White-box_testing
+[23]: https://en.wikipedia.org/wiki/Risk-based_testing
