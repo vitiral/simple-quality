@@ -78,9 +78,12 @@ you will drastically increase quality
 
 ### [artifact][7]: the design doc tool made for developers
 artifact will be our bread and butter for writing and linking our
-design to our source code. This tool was designed specifically to facilitate the
-philosophy of software quality presented in this book. artifact will be the topic of
-the next chapter.
+design to our source code and then hosting them as a webpage. This tool was
+designed specifically to facilitate the philosophy of software quality presented
+in this book. artifact will be the topic of the next chapter.
+
+At the end of the process, we will be able to host our design docs just like the
+artifact project [design docs][8].
 
 [1]: https://git-scm.com/
 [2]: http://rosettacode.org/wiki/Documentation
@@ -89,3 +92,4 @@ the next chapter.
 [5]: https://docs.python.org/3.6/library/unittest.html
 [6]: http://doc.pytest.org/en/latest/
 [7]: https://github.com/vitiral/artifact
+[8]: http://vitiral.github.io/artifact/#artifacts/REQ-1

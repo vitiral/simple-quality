@@ -15,7 +15,8 @@ more fun and more fulfilling. However, all of these lack the processes,
 tools and vocabulary necessary to bring them together into an organized whole.
 
 This book will give you the knowledge of how to unify and track all these quality
-best practices. The tools presented in this
-book will not only allow you to write better software, but will help your
-day-to-day workflow in the same ways that good unit tests do: "wait, how did I
-break *that*?" rather than "whoops, there goes my job!"
+best practices. The tools presented in this book will not only allow you to
+write better software, but will help your day-to-day workflow in the same ways
+that good unit tests do: "wait, how did I break *that*?" rather than "whoops,
+there goes my job!"
+

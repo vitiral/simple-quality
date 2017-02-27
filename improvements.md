@@ -3,6 +3,8 @@ finished. There are still many things that can be done before
 it should be considered "complete".
 
 ## Basic Features That Can Be Added
+1. export our design docs with `art export html`
+2. host it on github using [github pages][5]
 1. Make sure all items in the design are done by running
     `art ls -c '<99'`
 2. Try running `art ls -t '<99'` -- this should show you that
@@ -66,4 +68,5 @@ Any system tests should *definitely* go in your `design` folder.
 [2]: https://docs.python.org/2/library/stringio.html
 [3]: https://docs.python.org/dev/library/unittest.mock.html
 [4]: https://pexpect.readthedocs.io/en/stable/
+[5]: https://github.com/vitiral/artifact/blob/master/docs/ExportingHtml.md
 

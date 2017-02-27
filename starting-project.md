@@ -2,19 +2,12 @@ The primary teaching method that this book will employ is "learning by doing".
 This is an approach that many developers are familiar with and is used in some
 of the most effective tutorials on software development.
 
-The example project used will be the same as the one used in [artifact][1]'s tutorial.
-This is because artifact was designed *specifically* by the author of this book
-to address the **Simple Quality** approach. While there is definitely
-overlap between the two tutorials, they have very different purposes: artifact's
-tutorial is designed to teach the tool, while this is an in-depth tutorial
-for unifying quality best practices.
-
 The project we will be implementing is the [flash card challenge][2] created
 by Open Hatch. There are several reasons this project was chosen:
 - It has a clear goal with targeted users
 - It is simple to define and yet can be extremely broad
-- The guide is written in python, a language who's syntax reads like psuedo
-    code. You should be able to follow along in any language
+- The guide is written in python which largely reads like pseudo code.
+    You should be able to follow along in any language
 
 One of the best tutorials on C, [learn C the hard way][3] has this to
 say about itself:
@@ -38,7 +31,7 @@ this tutorial will use:
 
 Before we start, install the following tools:
 - [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-- [artifact](https://github.com/vitiral/artifact/wiki/User-Guide)
+- [artifact](https://github.com/vitiral/artifact/blob/master/docs/Installation.md)
 
 Now run the following:
 ```

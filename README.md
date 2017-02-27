@@ -5,15 +5,14 @@ By Garrett Berg <vitiral@gmail.com>
 
 # Introduction
 This is a short and open-source book aimed at helping software developers
-improve their software quality. Its targeted audience are those who:
+improve their software quality. It is also the primary user guide for the design
+doc tool [artifact][4]. Its targeted audience are those who:
 - know at least one programming language
 - know revision control. If you don't know one, learn git
 - want a brief guide on how to have fewer bugs, re-designs and headaches
     in all of their projects
 
-This book can be read in full at **[gitbooks][1]**. It is in a pre-release status,
-so is NOT content-complete or edited as much as the author would like. Comments
-and suggestions are always welcome.
+This book can be read in full at **[gitbooks][1]**.
 
 If you have suggestions or edits, you should be able to "start a new discussion"
 by hovering over a paragraph and clicking the "+" button to the right of it.
@@ -42,4 +41,5 @@ are all you need.
 [1]: https://vitiral.gitbooks.io/simple-quality/content/
 [2]: https://github.com/vitiral/simple-quality/issues
 [3]: https://www.google.com/search?q=gnu+gpl+v3&ie=utf-8&oe=utf-8
+[4]: https://github.com/vitiral
 
