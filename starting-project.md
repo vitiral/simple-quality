@@ -20,7 +20,7 @@ say about itself:
 There are three important aspects to the "Learn The Hard Way" method that
 this tutorial will use:
 1. It is designed for absolute beginners: you should know the basics of a
-    programming language and revision control, and that's all you need.
+    programming language and revision control, but that's all you need.
 2. It focuses on teaching simple concepts and tools which deliver immediate
     real-world value.
 3. It uses exercises as the primary teaching method. You must

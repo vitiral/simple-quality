@@ -10,12 +10,13 @@ actual design specifications. Create a new file, at
 ```
 [SPC-quiz]
 partof = "REQ-purpose"
-
-[SPC-quiz-ask]
 text = '''
-There shall be an `ask_question(question)` function which
-takes the question to ask and returns whether the user got
-it right or wrong
+Asking the shall be split into two parts:
+- [[SPC-quiz-get]]: get a question to ask based on
+  previously answered questions.
+- [[SPC-quiz-ask]]: ask the user a question and get
+  the result
+- [[SPC-answered]]: object for storing answers
 '''
 
 [SPC-quiz-get]
@@ -25,30 +26,34 @@ function which takes a list of questions and the answers
 which the user previously gave and returns the question to
 ask.
 '''
+
+[SPC-quiz-ask]
+text = '''
+There shall be an `ask_question(question)` function which
+takes the question to ask and returns whether the user got
+it right or wrong.
+'''
 ```
 
 ## Answered Component
 
-There is still a major component we are missing to our design, and that
-is the `Answered` object.
+There is still a major component we are missing to our design, and that is the
+`Answered` object (which we alluded to by referencing `[[SPC-answered]]`)
 
 Let's look at the basics, what should the Answered object do?
-- given a question, it returns how many times the question has
-    been answered correctly and incorrectly
-- given a question and an answer, it records that question's answer
-    internally
+- Given a question, it returns how many times the question has been answered
+  correctly and incorrectly
+- Given a question and an answer, it records that question's answer internally
 
-Now wait, you might be saying -- recording state isn't functional
-programming! And you would be right, it's not! But what we
-have managed to do is keep all state at our *top layer*. As long as the
-`Answered` object never gets mutated in a lower layer, then all our lower
-layers remain simple and easy to reason about.
+Now wait, you might be saying -- recording state isn't functional programming!
+And you would be right, it's not! But what we have managed to do is keep all
+state at our *top layer*. As long as the `Answered` object never gets mutated in
+a lower layer, then all our lower layers remain simple and easy to reason about.
 
 One of the first things to notice is that `Answered` will perform an internal
-lookup from `Question` -> `Answer`. Normally,
-this is best done by an object called a `dict` in python or a `HashMap`
-in other languages. `dict`s offer `O(1)` lookup time, or lookup
-time that does not depend on the number of items in the `dict`.
+lookup from `Question` -> `Answer`. Normally, this is best done by an object
+called a `dict` in python or a `HashMap` in other languages. `dict`s offer
+`O(1)` lookup time, or lookup time that does not depend on the number of items.
 
 Can we use our Question objects as keys in a dictionary? No, we can't -- only
 [immutable data types][1] can be used as keys. Drat.
@@ -58,8 +63,8 @@ questions, or does it only need to know the question itself? The
 `Question.question` attribute *is* immutable (it is a `str` type) and therefore
 can be used as keys for our `dict`!
 
-With this knowledge in hand, let's create our specification. Add the
-following to `design/quiz.toml`
+With this knowledge in hand, let's create our specification. Add the following
+to `design/quiz.toml`
 
 ```
 [SPC-answered]
@@ -81,11 +86,11 @@ which uses `question.question` as the keys and has
 ```
 
 > #### Exercise 1:
-> Using the specification above, write the `Answered` class in your
-> source code and link it to the #SPC-answered specification
+> Using the specification above, write the `Answered` class in your source code
+> and link it to the #SPC-answered specification
 >
-> Were there things that you think should have been added to the
-> design specification? If so, feel free to add them.
+> Were there things that you think should have been added to the design
+> specification? If so, feel free to add them.
 
 If you are having trouble with the above exercise, here is my code in
 `flash/quiz.py`:
@@ -116,12 +121,11 @@ class Answered(object):
 
 ## Implementing `get_question`
 
-`get_question` requires that we get a question at random, but weight
-questions which the user has gotten incorrect.
+`SPC-random` requires that we get a question at random, but give a higher weight
+to questions which the user is getting wrong.
 
-We want to try and incorporate right and wrong answers into the weight.
-We want right answers to decrease weight and wrong answers to increase
-weight.
+We want to try and incorporate right and wrong answers into the weight. We want
+right answers to decrease weight and wrong answers to increase weight.
 
 Let's take a first stab at something like this
 ```
@@ -130,9 +134,9 @@ weight -= num_correct / total_correct
 weight += num_incorrect / total_incorrect
 ```
 
-In other words, the weight is going to be lower (less likely to ask again)
-if the question has been gotten correct many times and higher (more likely
-to ask again) if the question has been gotten incorrect many times.
+In other words, the weight is going to be lower (less likely to ask again) if
+the question has been gotten correct many times and higher (more likely to ask
+again) if the question has been gotten incorrect many times.
 
 This is just a first stab, we may want to tweak this later.
 
@@ -140,7 +144,7 @@ This is just a first stab, we may want to tweak this later.
 > Using the weight formula above, write the `get_question` method.
 >
 > HINT: check out Python's [`random`][2] module and this link:
-        http://stackoverflow.com/questions/3679694
+>   http://stackoverflow.com/questions/3679694
 
 Here is my initial implementation:
 

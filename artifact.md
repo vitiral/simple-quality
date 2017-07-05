@@ -1,4 +1,3 @@
-
 Before we do anything else, let's start using git to track
 our progress. Since artifact tracks design docs which are written
 in plain text, you can (and should) use revision control to
@@ -20,38 +19,37 @@ us to track our progress.
 > Before proceeding with this guide any further, it is recommended
 > you go through the [git tutorial][1]
 >
-> you can always type `git COMMAND -h` to get help on any command
+> You can always type `git COMMAND -h` to get help on any command.
 >
 > The rest of the tutorial will assume you have a working knowledge
-> of git commands and what their purpose is
+> of git commands and what their purpose is.
 
-## art tutorial
-The art tutorial and this book have been developed together to
-work off of each other. Therefore, we are going to use the
-interactive tutorial provided by artifact and then build off of it.
+## Artifact Tutorial
+The artifact tutorial and this book have been developed together to work off of each
+other. Therefore, we are going to use the interactive tutorial provided by
+artifact and then build off of it.
 
 There are a few modifications you will want to make to the tutorial:
 - before continuing onto the next stage, always commit the changes
-    you've made to git.
+  you've made to git.
 - take notes during the process at the top of your README and be
-    sure to include them in your repository.
+  sure to include them in your repository.
 
-If you have already completed the art tutorial, it is safe for you
-to just run `art tutorial 4` and continue from there. If you have
-not gone through it, it is very short and was specifically crafted
-to fit into this guide. Therefore it is essential that you go through artifact's
-tutorial in full before continuing.
+If you have already completed the art tutorial, it is safe for you to just run
+`art tutorial 4` and continue from there. If you have not gone through it, it is
+very short and was specifically crafted to fit into this guide. Therefore it is
+essential that you go through artifact's tutorial in full before continuing.
 
 > ### Exercise 1:
-> when you ran `art tutorial` in the [Starting Project](starting-project.md)
+> When you ran `art tutorial` in the [Starting Project](starting-project.md)
 > section, artifact launched a `tutorial.toml` file which is a self-documenting
 > design file. Read through it and follow the instructions.
 >
-> The next stage, `art tutorial 2`, will launch a `tutorial.md` file
-> which can also be [viewed on the web][2]. Read through it and
-> follow the instructions until you have completed through part 5 (all of it)
+> The next stage, `art tutorial 2`, will launch a `tutorial.md` file which can
+> also be [viewed on the web][2]. Read through it and follow the instructions
+> until you have completed through part 5 (all of it)
 
-## running your tests
+## Running Your Tests
 
 Roll back the tutorial and commit your changes.
 ```
@@ -62,13 +60,13 @@ git commit -m "continuing quality book tutorial"
 
 Also, add `*.pyc` to your `.gitignore` file to ignore the python compiled files.
 
-We are running the tutorial in part 4 so that there are no
-errors when we are starting out (part 5 is about debugging errors).
+We are running the tutorial in part 4 so that there are no errors when we are
+starting out (part 5 is about debugging errors).
 
-If you followed along with the artifact interactive tutorial, you should
-feel pretty confident by now that our load component is well designed
-and *should* be implemented and tested. However, you haven't actually run any
-code yet, so you can't be sure! We are going to change that.
+If you followed along with the artifact interactive tutorial, you should feel
+pretty confident by now that our load component is well designed and *should* be
+implemented and tested. However, you haven't actually run any code yet, so you
+can't be sure! We are going to change that.
 
 The first thing you need to do is make sure you are running python2.7. Running:
 ```

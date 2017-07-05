@@ -1,7 +1,6 @@
-At first glance, it might appear that `get_question` is
-difficult to test. Since it is random, it isn't testable...
-right? Randomness certainly makes items more difficult to test, but not
-impossible.
+At first glance, it might appear that `get_question` is difficult to test. Since
+it is random, it isn't testable... right? Randomness certainly makes items more
+difficult to test, but not impossible.
 
 But we are getting ahead of ourselves. By breaking `get_question` up into
 deterministic pieces (as `get_question_weights` does), we can test those
@@ -41,8 +40,8 @@ class TestGetWeights(unittest.TestCase):
         assert weights == [1, 1]
 {%endace%}
 
-Now run the test with: `py.test flash/tests/test_quiz.py`. You should get
-a `ZeroDivisionError`.
+Now run the test with: `py.test flash/tests/test_quiz.py`. You should get a
+`ZeroDivisionError`.
 
 Whoops! Something in our design wasn't quite right -- we never accounted for
 what to do if `total_right` or `total_wrong` was zero!
@@ -68,12 +67,13 @@ works... or does it? It's hard to say for sure -- after all we only
 wrote a single test case. Let's write one more.
 
 This test requires a bit of knowledge about the gotchas of python.
-What happens if some of the weights should be floats?
+What happens if some of the weights are floats?
 
 {%ace edit=false, lang='python'%}
 def test_weights_right(self):
     """Assert values are correct when you get some answers
-    right more than others."""
+    right more than others.
+    """
     questions = [
         Question("who", "correct"),
         Question("what", "correct"),
@@ -99,11 +99,11 @@ After running the tests, you will see that the result is NOT as you expected.
 Why is this? The bug is because when you do `int / int` in python the result is an
 `int`, not a float as you might expect from algebra.
 
-> note: if you were using python3, you would not hit this bug.
-> All division in python3 results in a float.
+> note: if you were using python3, you would not hit this bug. All division in
+> python3 results in a float.
 
-Go and fix the bug in `get_weights` by multiplying all values by `1.0`
-before dividing:
+Go and fix the bug in `get_weights` by multiplying all values by `1.0` before
+dividing:
 
 {%ace edit=false, lang='python'%}
 if total_right:
@@ -130,16 +130,17 @@ good.
 
 ## Chapter Conclusion
 
-Hopefully it is starting to be clear how useful, but also difficult,
-testing can be. Testing can detect bugs in our functions before other
-functions use them, improving the quality of our entire software stack.
+Hopefully it is starting to be clear how useful, but also difficult, testing can
+be. Testing can detect bugs in our functions before other functions use them,
+improving the quality of our entire software stack.
 
-But how many tests should we write? How do we know how many is enough?
-The answer is, of course, that no amount of tests completely cover all
-the possible scenarios that software can be subjected to. However,
-if you cover the three categories of unit tests given in the
-[Vocabulary Chapter](vocabulary.md), then you can be pretty confident
-your unit tests cover as much of the risk as you could hope for.
+But how many tests should we write? How do we know how many is enough? The
+answer is, of course, that no amount of tests completely cover all the possible
+scenarios that software can be subjected to. However, if you cover the three
+categories of unit tests given in the [Vocabulary Chapter](vocabulary.md), then
+you can be pretty confident your unit tests cover as much of the risk as you
+could hope for.
 
-Further coverage is the job of integration and system tests, and is
-the topic of a later chapter.
+Further coverage is the job of integration and system tests, and is the topic of
+a later chapter.
+

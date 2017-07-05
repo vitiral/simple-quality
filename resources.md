@@ -1,5 +1,14 @@
 ## Additional Resources
 
+### artifact
+Resource links for artifact can be found on its github page:
+    https://github.com/vitiral/artifact
+
+#### Enterprise Plugins
+There are plans in the near future to release enterprise plugins for `artifact`
+in tools like JIRA and Zenhub that would help to support the project. Stay
+tuned.
+
 ### [Stackoverflow][1]
 Stackoverflow is the goto place to get your programming questions answered.
 If you've never heard of it, check it out.
@@ -21,21 +30,6 @@ Other than that, here are some that I like:
 [31]: https://github.com/syl20bnr/spacemacs
 [32]: http://www.sublimetext.com/
 
-### artifact
-
-#### [Wiki][2]
-On the artifact wiki you can find the full user documentation for
-artifact as well as how do do things like run a web-server to
-edit requirements on the web -- something that is
-very important for teams that include non-developers.
-
-[2]: https://github.com/vitiral/artifact/wiki
-
-#### Enterprise Plugins
-There are plans in the near future to release enterprise plugins for
-`artifact` in tools like JIRA and Zenhub that would help to support the project.
-Stay tuned.
-
 ### Agile Resources
 For a company or team of committed open source developers,
 agile is a highly efficient way to work together.
@@ -47,9 +41,12 @@ agile is a highly efficient way to work together.
 [21]: https://www.zenhub.com/
 
 ### Programming Languages That Help Improve Quality
-I love programming languages that are expressive, fast and safe.
-These languages hit all my sweet spots, and I can't recommend them
-enough.
+Aritfact is written in two programming languages (rust and elm) that I love, so
+I have to give them a shoutout here. Keep in mind: choose whatever programming
+language is *best for your application*, but also don't blindly choose a
+language just because it is the "best" or because it is the "standard" language
+for your problem space. Think a lot about what technology you choose, as that
+decision will impact almost every decision you make from that point forward.
 
 #### [rust][40]
 Rust is a systems programming language that runs blazingly fast, prevents

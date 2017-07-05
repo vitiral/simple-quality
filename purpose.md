@@ -30,15 +30,14 @@ include:
 Notice that we try to keep our purpose documentation as brief and simple
 as possible. This is important for all documents, but is especially important
 for high level docs. There is a basic rule: documentation that is not brief
-and clear will not be read -- it will be skimmed. Skimmed documentation will
-not get it's meaning across and will only complicate your project.
+and clear will not be read. You want to keep your docs readable, otherwise they
+will only weigh down your project.
 
 > ##### Exercise 1:
-> break down the purpose documentation above into some high level
-> requirements. Then give a high level specification for how you
-> would approach those requirements. What programming language would you use?
-> What libraries would you use? What would be your overall approach to
-> each problem?
+> In your `README.md`, break down the purpose documentation above into some high
+> level requirements. Then give a high level specification for how you would
+> approach those requirements. What programming language would you use? What
+> libraries would you use? What would be your overall approach to each problem?
 
 > ##### Exercise 2:
 > Assume your program ui would be over the command line. What kind of arguments

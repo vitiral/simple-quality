@@ -5,24 +5,24 @@ It is very important that your design documents have clear meaning. Without
 clear meaning, it is difficult to know your [definition of done][1].
 
 - **Shall – Requirement:**  Shall is used to indicate something that is
-    contractually binding, meaning it must be implemented and its
-    implementation verified. Don’t think of “shall” as a word, but
-    rather as an icon that SCREAMS “This is a requirement.”  If a statement
-    does not contain the word “shall” it is not a requirement.
+  contractually binding, meaning it must be implemented and its
+  implementation verified. Don’t think of “shall” as a word, but
+  rather as an icon that SCREAMS “This is a requirement.”  If a statement
+  does not contain the word “shall” it is not a requirement.
 - **Will - Facts or Declaration of Purpose:** Will is used to indicate a
-	statement of fact. Will statements are not subject to verification.
-	"The application **will** be written in python" is an example.
-    **Will** statements are meant to be notes to inform design
-    or specify implementation details.
+  statement of fact. Will statements are not subject to verification.
+  "The application **will** be written in python" is an example.
+  **Will** statements are meant to be notes to inform design
+  or specify implementation details.
 - **Should – Goals, non-mandatory provisions:** Should is used to indicate a
-    goal which must be addressed by the design team but is not formally
-    verified. Why include **should** statements? Because you may have a very
-    important issue that you want to communicate to the developers, but can’t
-    think of a way to do so in the form of a verifiable requirement. We have
-    already seen an example in our purpose statement: "the flash quizzer
-    **should** use es effective memorization techniques".
-    There is no way to validate that we are using the best methodlogies, but
-    we should aim for that goal.
+  goal which must be addressed by the design team but is not formally
+  verified. Why include **should** statements? Because you may have a very
+  important issue that you want to communicate to the developers, but can’t
+  think of a way to do so in the form of a verifiable requirement. We have
+  already seen an example in our purpose statement: "the flash quizzer
+  **should** use es effective memorization techniques".
+  There is no way to validate that we are using the best methodlogies, but
+  we should aim for that goal.
 
 **Reference**: these definitions are modified from an article at
 [reqexperts.com][2] (October 9th, 2012. Lou Wheatcraft)

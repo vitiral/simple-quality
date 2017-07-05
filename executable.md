@@ -1,4 +1,3 @@
-
 We will now put all the pieces together into actual command line application.
 
 The design is already laid out for us, all we need is the implementation.

@@ -1,10 +1,10 @@
 # Why This Book Exists
 There is a lack of good documentation unifying and extending quality best
 practices. While there have been several advancements made in how to develop
-quality software, they have largely been piecemeal and lacked the tools
+quality software, they have largely been piecemeal and lacked the tools to
 fit them all together. Several of the recent advancements include:
 - better revision control tools and best practices
-- new emphasis on unit tests as integral to the development process
+- new emphasis on unit tests as part of the development process
 - linters and auto-formatters to help projects have easy to read code
 - more emphasis on documentation, including inline developer documentation
 - the agile process and associated tools
@@ -15,8 +15,7 @@ more fun and more fulfilling. However, all of these lack the processes,
 tools and vocabulary necessary to bring them together into an organized whole.
 
 This book will give you the knowledge of how to unify and track all these quality
-best practices. The tools presented in this book will not only allow you to
-write better software, but will help your day-to-day workflow in the same ways
-that good unit tests do: "wait, how did I break *that*?" rather than "whoops,
-there goes my job!"
-
+best practices as well as give you an intro to artifact, the open-source documentation
+tool artifact. The tools presented in this book will not only allow you to write
+better software, but will help your day-to-day workflow in the same ways that
+good unit tests do.
