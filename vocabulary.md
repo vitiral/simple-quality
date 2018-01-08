@@ -20,8 +20,8 @@ clear meaning, it is difficult to know your [definition of done][1].
   important issue that you want to communicate to the developers, but can’t
   think of a way to do so in the form of a verifiable requirement. We have
   already seen an example in our purpose statement: "the flash quizzer
-  **should** use es effective memorization techniques".
-  There is no way to validate that we are using the best methodlogies, but
+  **should** use effective memorization techniques".
+  There is no way to validate that we are using the best methodologies, but
   we should aim for that goal.
 
 **Reference**: these definitions are modified from an article at
@@ -70,7 +70,7 @@ about? Spend some time focusing on these.
 
 You as the developer have the most insight into the internals of your
 application, so you are probably the most qualified individual for trying to
-break it. Always observe Murphey's law: **what can go wrong will go wrong.**
+break it. Always observe Murphy's law: **what can go wrong will go wrong.**
 If you can see something that might break, even if the scenario seems
 impossible for a user to hit, make sure it doesn't break anyway.
 
